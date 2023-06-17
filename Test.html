@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="Test.css">
+	<link rel="stylesheet" href="reset.css">
+	<title>Test-nav-slider</title>
+	<link rel="shortcut icon" href="img/Logo-icon-colored.svg" type="image/x-icon">
+</head>
+<body>
+	<!---header_menu--->
+	<header>
+
+		<div class="header" id="Home">
+			<div class="container-1">
+
+				<div class="lsi">
+					<a href="#Home"><img src="img/Logo white.svg" alt=""></a>
+					<div class="search">
+						<input type="text" placeholder="Шукати..." class="input_search">
+					</div>
+					<div class="icons">
+						<a href=""><img src="img/heart.svg" alt=""></a>
+						<a href="#popup"><img src="img/user.svg" alt=""></a>
+						<a href=""><img src="img/shopping-cart.svg" alt=""></a>
+					</div>
+				</div>
+
+				<div class="menu">
+					<ul class="menu_ul">
+						<label for=""><a href="#Home"><li class="menu_text">Home</li></a></label>
+						<label for=""><a href="#Sale"><li class="menu_text">Sale</li></a></label>
+						<label for=""><a href="#Top-seller"><li class="menu_text">Top Saller</li></a></label>
+						<label for=""><a href="#New"><li class="menu_text">New</li></a></label>
+					</ul>
+				</div>
+
+			</div>
+		</div>
+
+
+		<!---header_slider--->
+		<!-- 600 -->
+		<div class="header_2">
+			<div class="container-2">
+
+				<div class="img_slider">
+
+					
+
+					<div class="imgs">
+						<img class="mySlides" src="img/slide-1.png" alt="">
+                        <img class="mySlides" src="img/slide-2.png" alt="">
+                        <img class="mySlides" src="img/slide-3.png" alt="">
+					</div>
+					
+					<div class="nav-slider">
+						<button class="w3-button w3-display-left" onclick="plusDivs(-1)"><img src="img/arrow-left.svg" alt=""></button>
+						<label for="btn1" class="bar"></label>
+						<label for="btn2" class="bar"></label>
+						<label for="btn3" class="bar"></label>
+						<label for="btn4" class="bar"></label>
+						<label for="btn5" class="bar"></label>
+						<button class="w3-button w3-display-right" onclick="plusDivs(+1)"><img src="img/arrow-right.svg" alt=""></button>
+					</div>
+					
+					<div class="slides">
+						<input type="radio" name="common" id="btn1" checked>
+						<input type="radio" name="common" id="btn2">
+						<input type="radio" name="common" id="btn3">
+						<input type="radio" name="common" id="btn4">
+						<input type="radio" name="common" id="btn5">
+					</div>
+
+				</div>
+
+
+				<div class="text_btn">
+
+						<div class="text">
+							<p class="p1">Осіння Акція</p>
+							<p class="p2">Знижки до 30%</p>	
+						</div>
+
+					<button class="btn">Купити</button>
+				</div>
+
+			</div>
+		</div>
+		
+	</header>
+	<!---header_slider-END--->
+
+
+
+
+
+	<!-- Popup-User-Enter -->
+	<div id="popup" class="popup">
+		<div class="container-Enter">
+			
+			<a href=""><img class="img-close" src="img/x-symbol-svgrepo-com.svg" alt=""></a>
+
+			<div class="content-enter">
+
+				<div class="content">
+
+					
+					
+					<div class="text-close">
+						<p>Вхід</p>
+					</div>
+
+
+					<div class="filds">
+						<div class="email-enter">
+							<p>Ел.почта або телефон</p>
+							<input type="email" placeholder="Введіть ел. пошту / телефон" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+						</div>
+
+
+						<div class="pass-enter">
+							<p>Пароль</p>
+							<input type="password" placeholder="Введіть пароль" required min="8" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+						</div>
+					</div>
+
+					
+					<div class="round-remember">
+						<input type="checkbox" id="remember">
+						<label for="remember">Запам'ятати</label>
+					</div>
+
+
+					<div class="btn-reg-btn">
+						<a href="#personal-data"><button>Увійти</button></a>
+						<a href="#popup-up">Зареєструватися</a>
+					</div>
+
+				</div>
+
+			</div>	
+		</div>
+	</div>
+
+
+	<!-- TEST -->
+	<!-- Popup-User-up -->
+	<div id="popup-up" class="popup-up">
+		<div class="container-Enter">
+
+			<a href=""><img class="img-close" src="img/x-symbol-svgrepo-com.svg" alt=""></a>
+
+			<div class="content-enter">
+			
+				<div class="content">
+					<div class="text-close-up">
+						<p>Реєстрація</p>
+					</div>
+
+					<div class="filds">
+						<div class="email-enter">
+							<p>Ел.почта або телефон</p>
+							<input type="email" placeholder="Введіть ел. пошту / телефон" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+						</div>
+
+
+						<div class="pass-enter-up">
+							<p>Пароль</p>
+							<input type="password" placeholder="Введіть пароль" required min="8" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+						</div>
+					</div>
+
+					<div class="btn-reg-enter">
+						<button>Зареєструватися</button>
+						<div class="p-a">
+							<p>Уже є аккаунт?</p>
+							<a href="#popup">Увійти</a>
+						</div>	
+					</div>
+
+				</div>	
+
+			</div>
+		</div>
+	</div>
+	<!-- TEST -->
+
+	<!-- TEST-2 START-->
+	<div id="personal-data" class="account-personal-data">
+		<!-- HEADER -->
+		<header class="header-account">
+
+			<div class="header" id="Home">
+				<div class="container-1">
+	
+					<div class="lsi">
+						<a href="#Home"><img src="img/Logo white.svg" alt=""></a>
+						<div class="search">
+							<input type="text" placeholder="Шукати..." class="input_search">
+						</div>
+						<div class="icons">
+							<a href=""><img src="img/heart.svg" alt=""></a>
+							<a href="#popup"><img src="img/user.svg" alt=""></a>
+							<a href=""><img src="img/shopping-cart.svg" alt=""></a>
+						</div>
+					</div>
+	
+					<div class="menu">
+						<ul class="menu_ul">
+							<label for=""><a href="#Home"><li class="menu_text">Home</li></a></label>
+							<label for=""><a href="#Sale"><li class="menu_text">Sale</li></a></label>
+							<label for=""><a href="#Top-seller"><li class="menu_text">Top Saller</li></a></label>
+							<label for=""><a href="#New"><li class="menu_text">New</li></a></label>
+						</ul>
+					</div>
+	
+				</div>
+			</div>
+
+		</header>
+		<!-- HEADER END -->
+
+
+		<div class="account-display">
+
+
+			<div class="listOFblocks">
+				<a href="#personal-data-blocks" class="a-data"><button class="profile focus">
+					<div class="img-text">
+						<img src="img/user.svg" alt="">
+						<p>Ім'я користувача</p>
+					</div>
+				</button></a>
+
+
+				<a href="#My-orders-data" class="a-data"><button class="My-orders focus">
+					<div class="img-text">
+						<img src="img/orders.svg" alt="">
+						<p>Мої замовлення</p>
+					</div>
+				</button></a>
+
+
+				<a href="#Wish-list-data" class="a-data">
+				<button class="Wish-list focus">
+					<div class="img-text">
+						<img src="img/heart.svg" alt="">
+						<p>Список бажань</p>
+					</div>
+				</button></a>
+
+
+				<button class="history focus">
+					<div class="img-text">
+						<img src="img/search-zoom-in.svg" alt="">
+						<p>Історія перегляду</p>
+					</div>
+				</button>
+
+
+				<button class="notification focus">
+					<div class="img-text">
+						<img src="img/notification.svg" alt="">
+						<p>Сповіщення</p>
+					</div>
+				</button>
+
+				<button class="empty focus">
+					<div class="img-text">
+						
+						<p></p>
+					</div>
+				</button>
+
+				<button class="empty focus">
+					<div class="img-text">
+						
+						<p></p>
+					</div>
+				</button>
+			</div>
+
+		<div class="relative">
+
+			<div class="personal-data-blocks" id="personal-data-blocks">
+				<p class="personal-p">Особисті дані</p>
+
+				<div class="blocks-personal">
+					<div class="block-personal bg-personal">
+						<div class="svg-text-personal">
+							<img src="img/user.svg" alt="">
+							<p>Особисті дані</p>
+						</div>
+						<a href="#"><img src="img/arrow-down.svg" alt=""></a>
+					</div>
+
+					<div class="block-personal2 bg-personal">
+						<div class="svg-text-personal">
+							<img src="img/shopping-cart.svg" alt="">
+							<p>Якийсь текст</p>
+						</div>
+						<a href="#"><img src="img/arrow-down.svg" alt=""></a>
+					</div>
+
+					<div class="block-personal3 bg-personal">
+						<div class="svg-text-personal">
+							<img src="img/car.svg" alt="">
+							<p>Адреса доставки</p>
+						</div>
+						<a href="#"><img src="img/arrow-down.svg" alt=""></a>
+					</div>
+
+					<div class="block-personal4 bg-personal">
+						<div class="svg-text-personal">
+							<img src="img/lock.svg" alt="">
+							<p>Логін</p>
+						</div>
+						<a href="#"><img src="img/arrow-down.svg" alt=""></a>
+					</div>
+
+					<div class="block-personal5 bg-personal">
+							<div class="svg-text-personal">
+								<img src="img/sms.svg" alt="">
+								<p>Контакти</p>
+							</div>
+							<a href="#"><img src="img/arrow-down.svg" alt=""></a>
+					</div>
+					
+				</div>
+			</div>
+
+			<div class="My-orders-data" id="My-orders-data">
+				<p class="personal-p">Мої замовлення</p>
+
+				<div class="choose-My-orders">
+					<div class="text-my-orders">
+						<a href=" ">Усі замовлення</a>
+						<a href=" ">Повернення та гарантія</a>
+					</div>
+				</div>
+				
+				<div class="empty-my-orders">
+					<div class="text-btn-my-orders">
+						<p class="sorry">Ой! Здається тут пусто.</p>
+						<p class="mini-sorry">Ви ще нічого не замовляли</p>
+						<a href="#Home"><button>Головна</button></a>
+					</div>	
+				</div>
+			</div>
+
+			<div id="Wish-list-data" class="Wish-list-data">
+				<p class="personal-p">Список Бажань</p>
+
+				<div class="empty-my-wish">
+					<div class="text-btn-my-orders">
+						<p class="sorry">Ой! Здається тут пусто.</p>
+						<p class="mini-sorry">Створіть перший список</p>
+						<a href="#popup-create-list"><button>Створити</button></a>
+					</div>	
+				</div>
+			</div>
+
+
+		</div>	
+
+		</div>
+	</div>
+	<!-- TEST-2 END-->
+
+
+	<!-- popup-wish-list-create START -->
+	<div id="popup-create-list" class="popup-wish-list">
+		<div class="popup-wish-container">
+			<div class="close-text-wish">
+				<p>Створення</p>
+				<a href="#Wish-list"><img src="img/x-symbol-svgrepo-com.svg" alt=""></a>
+			</div>
+
+			<div class="input-p-create-list">
+				<p>Список</p>
+				<input type="text" placeholder="Назва списку">
+			</div>
+
+			<a href="#Wish-list-data" class="a-list"><button class="btn-create-list-my">Створити</button></a>
+		</div>
+	</div>
+	<!-- popup-wish-list-create END -->
+
+
+	<div class="block-1">
+		<div class="img-sale-1">
+			<img src="img/card1.png" alt="">
+			<div class="minus-sale">-30%</div>
+		</div>
+
+		<p class="con-p2-sale">Пенал жорсткий, одинарний, Синій. </p>
+
+		<div class="text-btn">
+			<p class="con-p1-btn">245₴</p>
+			<p class="con-p2-btn">350₴</p>
+			<button class="btn-buy">Купити</button>
+		</div>	
+	</div>
+
+    <script src="script.js"></script>
+</body>
+</html>

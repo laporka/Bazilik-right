@@ -1,0 +1,447 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Kavivanar&family=Keania+One&family=Raleway:ital,wght@0,400;0,700;0,800;1,300&display=swap');
+
+
+body{
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Kavivanar','Raleway','Inter';
+	background-color: #EBDECB;
+	font-family: 'Kavivanar', 'Raleway';
+}
+.container-1{
+    max-width: 1392px;
+    height: 148px;
+    margin: 0 auto;
+}
+.header{
+	background-color: #FFFFFF;
+	height: 148px;
+	margin-bottom: 70px;
+}
+
+
+
+
+/* LSI and menu START */
+
+
+/* LSI */
+.lsi{
+	padding-top: 24px;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 18px;
+}
+.lsi input{
+	font-size:16px ;
+	font-weight: 400;
+}
+.container-1 input {
+	padding-left:53px;
+	background-image:url(img/search.svg);
+	background-size: 24px 24px;
+	background-repeat: no-repeat;
+	background-position: 20px;
+  }
+.input_search{
+	border: #000000 solid 1px;
+	border-radius: 800px;
+	justify-content: center;
+	width: 757px;
+	height: 50px;
+}
+.icons{
+	display: flex;
+	justify-content: space-between;
+	column-gap: 60px;
+}
+
+
+/* Menu */
+.menu{
+	display: flex;
+	justify-content: center;
+}
+.menu_ul{
+	display: flex;
+	column-gap: 52px;
+	justify-content: space-between;
+}
+.menu_text{
+	font-weight: 400;
+	font-size: 24px;
+}
+
+
+/* LSI and menu CLOSE */
+
+
+
+/* Sale START */
+.container-2{
+	max-width: 1392px;
+	margin: 0 auto;
+}
+
+
+/* Select  START*/
+.select-div{
+	display: flex;
+	justify-content: right;
+}
+.select-sale{
+	background-color: #EAEAEA;
+	width: 191px;
+	height: 36px;
+	border: #B7B7B7 solid 1px;
+	font-size: 14px;
+	font-family: 'Raleway';
+	font-weight: 700;
+	padding: 8px;
+	margin-bottom: 24px;
+}
+/* Select END */
+
+
+
+/* Paragraphs */
+.p-Sale-h1{
+	font-size: 56px;
+	font-weight: 700;
+	font-family: 'Raleway';
+	text-align: center;
+	margin-bottom: 30px;
+}
+.text-arrow-up p{
+	font-size: 14px;
+	font-family: 'Raleway';
+	font-weight: 700;
+}
+.text-arrow-up p:nth-child(2){
+	color: #B7B7B7;
+}
+
+
+/* Filters Start */
+.Filters{
+	padding: 8px;
+	background-color: #EAEAEA;
+	width: 306px;
+	height: 629px;
+}
+.seller{
+	margin-bottom: 32px;
+}
+
+
+/* Seller filter START */
+.text-p-seller{
+	display: flex;
+	justify-content: space-between;
+	column-gap: 12px;
+}
+.text-arrow-up{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.checkboxes label{
+	margin-left: 12px;
+}
+.checkboxes{
+	margin-top: 16px;
+	font-size: 14px;
+	font-family: 'Raleway';
+	font-weight: 700;
+}
+.checkxob{
+	margin-bottom: 16px;
+}
+.checkboxes input{
+	width: 16px;
+	height: 16px;
+	background-color: none;
+	border: #BEBBB9 solid 1px;
+	border-radius: 4px;
+}
+/* Seller filter END */
+
+/* Brends START*/
+.brends{
+	margin-bottom: 32px;
+}
+.input-search-Brends{
+	width: 290px;
+	height: 32px;
+	border: #C4C1BC solid 1px;
+	border-radius: 5px;
+	background-color: #EAEAEA;
+	font-size: 14px;
+	font-weight: 700;
+	font-family: 'Raleway';
+	margin-bottom: 24px;
+	margin-top: 12px;
+    padding-left: 8px;
+}
+.brends-2{
+	font-size: 14px;
+	font-family: 'Raleway';
+	font-weight: 700;
+}
+.checkboxes-2 label{
+	margin-left: 12px;
+}
+.checkboxes-2 input{
+	width: 16px;
+	height: 16px;
+	background-color: none;
+	border: #BEBBB9 solid 1px;
+	border-radius: 4px;
+}
+/* Brends END */
+
+/* Price START */
+.input-range{
+	display: flex;
+	justify-content: space-between;
+	column-gap: 12px;
+	width: 270px;
+	margin-top: 16px;
+}
+.min-max input{
+	font-size: 14px;
+	font-family: 'Raleway';
+	font-weight: 700;
+	width: 80px;
+	height: 25px;
+	border: #C4C1BC solid 1px;
+	border-radius: 5px;
+	background-color: #EAEAEA;
+}
+.min-max input[type="text"]{
+	padding-left: 8px;
+}
+.min-max{
+	display: flex;
+	justify-content: space-between;
+	column-gap: 24px;
+}
+.min-max-btn{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 16px;
+}
+.min-max-btn button{
+	width: 60px;
+	height: 25px;
+	border: #C4C1BC solid 1px;
+	border-radius: 5px;
+	background-color: #EAEAEA;
+	font-size: 14px;
+	font-family: 'Raleway';
+	font-weight: 700;
+}
+/* Price END */
+
+/* Filters End */
+
+
+/* Sale-product-1 START*/
+.filters-and-products{
+	display: flex;
+	justify-content: space-between;
+}
+.blocks{
+	display: flex;
+	justify-content: space-between;
+	column-gap: 40px;
+}
+
+/* Sale-product-1 END*/
+
+
+
+
+/* BLocks-products-1 START*/
+.Sale-block-1{
+	margin-bottom: 50px;
+}
+/* BLocks-products-1 END*/
+
+/* BLocks-products-2 START*/
+.Sale-block-2{
+	margin-bottom: 50px;
+}
+/* BLocks-products-2 END*/
+
+/* BLocks-products-3 START*/
+.Sale-block-3{
+	margin-bottom: 50px;
+}
+/* BLocks-products-3 END*/
+
+/* BLocks-products-4 START*/
+.Sale-block-4{
+	margin-bottom: 50px;
+}
+/* BLocks-products-4 END*/
+
+/* BLocks-products-5 START*/
+.Sale-block-5{
+	margin-bottom: 42px;
+}
+/* BLocks-products-5 END*/
+
+/* FOR ALL START*/
+.btn-buy{
+	width: 89px;
+	height: 37px;
+	background-color: #FFFFFF;
+	border: #000000 solid 2px;
+	border-radius: 50px;
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+}
+.con-btn{
+	font-size: 24px;
+	font-weight: 700;
+	font-family: 'Raleway';
+}
+.con-btn-2{
+	font-size: 16px;
+	font-weight: 400;
+	text-decoration: line-through;
+}
+.con-p-sale{
+	font-size: 16px;
+	font-weight: 800;
+	text-align: center;
+	margin-bottom: 41px;
+}
+.block-sale-all{
+	width: 306px;
+	height: 420px;
+	background-color: #C1DBD0;
+}
+.prod{
+		max-width: 998px;
+		height: 484px;
+}
+.img-sale{
+	margin-bottom: 11px;
+	position: relative;
+}
+.text-btn-top-seller{
+	display: flex;
+	justify-content: center;
+	column-gap: 16px;
+	align-items: center;
+}
+
+
+/* Arrows */
+.arrows{
+	display: flex;
+	justify-content: space-between;
+	column-gap: 142px;
+	width: 190px;
+	height: 24px;
+	margin-top: 40px;
+}
+/* FOR ALL END */
+
+
+
+/* FOOTER START */
+.footer{
+	width: 100%;
+	height: 264px;
+	margin: 0 auto;
+	background-color: #FFFFFF;
+}
+.container-foot{
+	max-width: 1392px;
+	height: 264px;
+	margin: 0 auto;
+	
+}
+.upper-footer{
+	width: 1392px;
+	height: 200px;
+	display: flex;
+	justify-content: space-between;
+	column-gap: 136px;
+	margin-bottom: 38px;
+	align-items: center;
+}
+.under-footer{
+	width: 1392px;
+	height: 29px;
+	display: flex;
+	justify-content: space-between;
+}
+.p-icons{
+	display: flex;
+	justify-content: space-between;
+	column-gap: 20px;
+}
+.messages-imgs{
+	display: flex;
+	justify-content: space-between;
+	column-gap: 14px;
+}
+
+
+.footer-text-1{
+	text-align: center;
+}
+
+
+/* Paragraphs */
+.apeal{
+	font-size: 20px;
+	font-weight: 400;
+	font-family: 'Raleway';
+	margin-bottom: 18px;
+}
+.p-number{
+	font-size: 24px;
+	font-weight: 400;
+	font-family: 'Radio Canada';
+}
+.f-logo{
+	margin-bottom: 25px;
+}
+.f-ps p{
+	margin-bottom: 10px;
+	font-size: 14px;
+	font-weight: 400;
+	font-family: 'Raleway';
+}
+
+.main-f-text{
+	font-size: 20px;
+	font-weight: 400;
+	font-family: 'Raleway';
+	margin-bottom: 19px;
+}
+/* FOOTER END */
+
+
+.leaderOFsale{
+	position: absolute;
+	top: 8px;
+	left: 8px;
+	border: #FFFFFF;
+	border-radius: 100px;
+	background-color: #E9BE4F ;
+	color: #FFFFFF;
+	display: flex;
+	padding: 5px 10px;
+	font-size: 14px;
+	font-weight: 400;
+	font-family: 'Raleway';
+}
