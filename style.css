@@ -239,11 +239,22 @@ header{
 /* Arrows */
 .arrows{
 	display: flex;
+	align-items: center;
 	justify-content: space-between;
-	column-gap: 142px;
-	width: 190px;
+	column-gap: 24px;
+	width: 294px;
 	height: 24px;
 	margin-bottom: 40px;
+}
+.arrows button{
+	color: black;
+	background-color: #74BDD3;
+	font-size: 14px;
+	font-family: 'Raleway';
+	font-weight: 700;	
+	border-radius: 7px;
+	width: 165px;
+	height: 36px;
 }
 
 
@@ -780,14 +791,13 @@ header{
 /* Footer */
 .footer{
 	width: 100%;
-	height: 264px;
 	margin: 0 auto;
 	background-color: #FFFFFF;
 	box-shadow: #000000 0px 0px 50px;
 }
 .container-foot{
 	max-width: 1392px;
-	height: 264px;
+	padding-bottom: 24px;
 	margin: 0 auto;
 	
 }

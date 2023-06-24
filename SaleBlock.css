@@ -70,6 +70,7 @@ body{
 .menu_text{
 	font-weight: 400;
 	font-size: 24px;
+	color: black;
 }
 
 
@@ -265,31 +266,31 @@ body{
 
 /* BLocks-products-1 START*/
 .Sale-block-1{
-	margin-bottom: 50px;
+	margin-bottom: 100px;
 }
 /* BLocks-products-1 END*/
 
 /* BLocks-products-2 START*/
 .Sale-block-2{
-	margin-bottom: 50px;
+	margin-bottom: 100px;
 }
 /* BLocks-products-2 END*/
 
 /* BLocks-products-3 START*/
 .Sale-block-3{
-	margin-bottom: 50px;
+	margin-bottom: 100px;
 }
 /* BLocks-products-3 END*/
 
 /* BLocks-products-4 START*/
 .Sale-block-4{
-	margin-bottom: 50px;
+	margin-bottom: 100px;
 }
 /* BLocks-products-4 END*/
 
 /* BLocks-products-5 START*/
 .Sale-block-5{
-	margin-bottom: 42px;
+	margin-bottom: 100px;
 }
 /* BLocks-products-5 END*/
 
@@ -328,7 +329,7 @@ body{
 }
 .prod{
 		max-width: 998px;
-		height: 484px;
+		height: 420px;
 }
 .img-sale{
 	margin-bottom: 11px;
@@ -361,13 +362,13 @@ body{
 /* FOOTER START */
 .footer{
 	width: 100%;
-	height: 264px;
 	margin: 0 auto;
 	background-color: #FFFFFF;
+	box-shadow: #000000 0px 0px 50px;
 }
 .container-foot{
 	max-width: 1392px;
-	height: 264px;
+	padding-bottom: 24px;
 	margin: 0 auto;
 	
 }
@@ -423,6 +424,9 @@ body{
 	font-size: 14px;
 	font-weight: 400;
 	font-family: 'Raleway';
+}
+.f-ps a{
+	color: black;
 }
 
 .main-f-text{
