@@ -30,3 +30,24 @@ function carousel() {
   x[slideIndex-1].style.display = "block";
   setTimeout(carousel, 4000); // Change image every 2 seconds
 }
+
+// function show() {
+//   var x = document.getElementById("mainFrameTwo");
+//   if (x.style.visibility === "hidden") {
+//     x.style.visibility = "visible";
+//   } else {
+//     x.style.visibility = "hidden";
+//   }
+// }
+
+// function show() { 
+// 	document.getElementById("mainFrameOne").style.visibility="hidden"; 
+// 	document.getElementById("mainFrameTwo").style.visibility="visible"; 
+// }
+
+// function show(){
+//   if(document.getElementById(mainFrameTwo).style.display == 'none')
+//     document.getElementById(mainFrameTwo).style.display = 'block';
+//   else
+//     document.getElementById(mainFrameTwo).style.display = 'none';
+// }

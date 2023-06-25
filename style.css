@@ -23,9 +23,6 @@ body{
 	display: flex;
 	justify-content: space-between;
 }
-header{
-	box-shadow: #000000 0px 0px 50px;
-}
 .header{
 	background-color: #FFFFFF;
 	height: 148px;
@@ -33,6 +30,7 @@ header{
 .header_2{
 	background-image: url("img/bg-main.svg");
 	height: 600px;
+	box-shadow: #000000 0px 0px 50px inset;
 }
 
 
@@ -209,6 +207,7 @@ header{
 	display: flex;
 	justify-content: space-between;
 	column-gap: 40px;
+	overflow: hidden;
 }
 
 /* Paragraphs */
