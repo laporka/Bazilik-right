@@ -31,23 +31,19 @@ function carousel() {
   setTimeout(carousel, 4000); // Change image every 2 seconds
 }
 
-// function show() {
-//   var x = document.getElementById("mainFrameTwo");
-//   if (x.style.visibility === "hidden") {
-//     x.style.visibility = "visible";
-//   } else {
-//     x.style.visibility = "hidden";
-//   }
-// }
+// document.getElementById('min').addEventListener('input', () =>{
+//   let getmin = document.getElementById('min').value;
+//   document.getElementById('getMin').innerHTML = getmin;
+// });
 
-// function show() { 
-// 	document.getElementById("mainFrameOne").style.visibility="hidden"; 
-// 	document.getElementById("mainFrameTwo").style.visibility="visible"; 
-// }
+function minG() {
+  var rng=document.getElementById('min'); //range input min
+  var i1=document.getElementById('getMin'); // input min
+  i1.value=rng.value;
+}
 
-// function show(){
-//   if(document.getElementById(mainFrameTwo).style.display == 'none')
-//     document.getElementById(mainFrameTwo).style.display = 'block';
-//   else
-//     document.getElementById(mainFrameTwo).style.display = 'none';
-// }
+function maxG() {
+  var rng1=document.getElementById('max'); //range input max
+  var mini1=document.getElementById('getMax'); //input max
+  mini1.value=rng1.value;
+}

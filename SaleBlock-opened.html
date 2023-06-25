@@ -57,16 +57,18 @@
 			<div class="Filters">
 				<div class="container-filters">
 
-					<div class="seller">
+					<details class="seller">
 
-							<div class="text-arrow-up">
-								<div class="text-p-seller">
-									<p>Продавець</p> 
-									<p>2</p>
+							<summary class="block-personal">
+								<div class="text-arrow-up">
+									<div class="text-p-seller">
+										<p>Продавець</p> 
+										<p>2</p>
+									</div>
+
+									<img class="Sale-seller-chevron" src="img/arrow-down.svg" alt="">
 								</div>
-
-								<a href="#"><img src="img/arrow-up.svg" alt=""></a>
-							</div>
+							</summary>
 
 							<div class="checkboxes">
 								<div class="checkbox-1-seller checkxob">
@@ -80,23 +82,31 @@
 								</div>
 							</div>
 						
-					</div>
+					</details>
 
 
-					<div class="brends">
+					<details class="brends">
+							<!-- class="text-arrow-up" -->
+							
+							<summary class="block-personal">
+								<div class="text-arrow-up">
+									<div class="text-p-seller">
+										<p>Бренд</p> 
+										<p>8</p>
+									</div>
 
-							<div class="text-arrow-up">
-								<div class="text-p-seller">
-									<p>Бренд</p> 
-									<p>8</p>
+									<img class="Sale-brends-chevron" src="img/arrow-down.svg" alt="">
 								</div>
 
-								<a href="#"><img src="img/arrow-up.svg" alt=""></a>
-							</div>
+								<input type="text" placeholder="Пошук..." class="input-search-Brends">
+							</summary>
 
-							<input type="text" placeholder="Пошук..." class="input-search-Brends">
+							
 
 							<div class="checkboxes-2 brends-2">
+								
+								
+
 								<div class="checkbox-1-seller checkxob">
 									<input type="checkbox" id="CoolPack">
 									<label for="CoolPack">CoolPack</label>
@@ -138,33 +148,34 @@
 								</div>
 							</div>
 
-					</div>
+					</details>
 
-					<div class="Price">
+					<details class="Price">
+						<summary class="block-personal">
+							<div class="text-arrow-up">
+								<div class="text-p-seller">
+									<p>Ціна</p> 
+								</div>
 
-						<div class="text-arrow-up">
-							<div class="text-p-seller">
-								<p>Ціна</p> 
+								<img class="Sale-price-chevron" src="img/arrow-down.svg" alt="">
 							</div>
-
-							<a href="#"><img src="img/arrow-up.svg" alt=""></a>
-						</div>
+						</summary>
 						
 						<div class="input-range">
-							<input type="range" id="min">
-							<input type="range" id="max">
+							<input type="range" id="min" oninput="minG()" min="0" max="1146">
+							<input type="range" id="max" oninput="maxG()" min="0" max="1146">
 						</div>
 
 						<div class="min-max-btn">
 							<div class="min-max">
-								<input type="text" placeholder="Мін">
-								<input type="text" placeholder="Макс">
+								<input type="text" placeholder="Мін" id="getMin">
+								<input type="text" placeholder="Макс" id="getMax">
 							</div>
 
 							<button>Ок</button>
 						</div>
 
-					</div>
+					</details>
 
 				</div>
 			</div>
@@ -534,6 +545,6 @@
 </footer>
 
 
-
+<script src="script.js"></script>
 </body>
 </html>
