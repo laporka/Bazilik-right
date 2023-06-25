@@ -544,11 +544,12 @@ body{
 /* TEST-2 START */
 	.account-personal-data{
 		background-color: #FFFFFF;
-		height: 927px;
+		height: auto;
+		padding-bottom: 64px;
 	}
 	.account-display{
 		max-width: 1392px;
-		height: 695px;
+		height: auto;
 		margin: 0 auto;
 		display: flex;
 		justify-content: space-between;
@@ -680,13 +681,7 @@ body{
 	
 
 	/* FOR ALL START */
-	.bg-personal{
-		width: 1107px;
-		height: 100px;
-		background-color: #FFFFFF;
-		border: #BABABA solid 1px;
-		border-radius: 5px;
-	}
+	
 	.svg-text-personal{
 		display: flex;
 		justify-content: space-between;
@@ -976,4 +971,73 @@ body{
 
 .a-data p{
 	color: #000000;
+}
+
+.personal-section[open] .personal-chevron{
+	transform: rotate(-180deg);
+}
+.block-personal-opened ul{
+	margin-left: 112px;
+	width: 959px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	column-gap: 150px;
+}
+.lable-personal{
+	font-size: 12px;
+}
+.text-size{
+	font-size: 16px;
+	font-family: 'Raleway';
+	margin-top: 8px;
+}
+.block-personal-opened ul>li{
+	margin-bottom: 24px;
+	width: 250px;
+}
+
+.bg-personal{
+	width: 1107px;
+	height: auto;
+	background-color: #FFFFFF;
+	border: #BABABA solid 1px;
+	border-radius: 5px;
+}
+
+/* Присвоєня */
+.block-personal-opened-change{
+	display: none;
+}
+.block-personal-opened-change ul{
+	margin-left: 112px;
+	width: 959px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	column-gap: 150px;
+}
+.lable-personal{
+	font-size: 12px;
+}
+.block-personal-opened-change ul>li{
+	margin-bottom: 24px;
+	width: 250px;
+}
+.input-personal{
+	width: 250px;
+	border: #BABABA 1px solid;
+	border-radius: 10px;
+	padding: 8px 12px;
+}
+.btnPersonalOpened{
+	width: 200px;
+	padding: 6px 8px;
+	background-color: lawngreen;
+}
+
+.btnPersonalOpenedChange{
+	width: 200px;
+	padding: 6px 8px;
+	background-color: #74BDD3;
 }

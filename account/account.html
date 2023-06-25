@@ -55,7 +55,7 @@
 						<p>Ім'я користувача</p>
 					</div>
 				</button></a>
-
+<!-- DETAILS робити так бо воно відкриває просто на голове summary а на те що відкривається div -->
 
 				<a href="./order.html" class="a-data"><button class="My-orders focus">
 					<div class="img-text">
@@ -110,13 +110,89 @@
 				<p class="personal-p">Особисті дані</p>
 
 				<div class="blocks-personal">
-					<div class="block-personal bg-personal">
-						<div class="svg-text-personal">
-							<img src="img/user.svg" alt="">
-							<p>Особисті дані</p>
+					<details class="personal-section bg-personal">
+						<summary class="block-personal">
+							<div class="svg-text-personal">
+								<img src="img/user.svg" alt="">
+								<p>Особисті дані</p>
+							</div>
+							<img class="personal-chevron" src="img/arrow-down.svg" alt="">
+						</summary>
+
+						<div class="block-personal-opened" id="mainFrameOne">
+							<ul>
+								<li>
+									<label for="" class="label-personal"><p>Прізвище</p></label>
+									<p class="text-size" id="secondName"></p>
+								</li>
+
+								<li>														
+									<label for="" class="label-personal"><p>Стать</p></label>
+									<p class="text-size" id="MaleFemale"></p>
+								</li>
+								<li>
+									<label for="" class="label-personal"><p>Ім'я</p></label>
+									<p class="text-size" id="Name"></p>
+								</li>
+								<li>
+									<label for="" class="label-personal"><p>Дата народження</p></label>
+									<p class="text-size" id="Date"></p>
+								</li>
+								<li>
+									<label for="" class="label-personal"><p>По батькові</p></label>
+									<p class="text-size" id="FatherName"></p>
+								</li>
+								<li>
+									<label for="" class="label-personal"><p>Мова</p></label>
+									<p class="text-size" id="Language"></p>
+								</li>
+							</ul>
+
+							<button class="btnPersonalOpened" id="btnChange-personal" onclick="show()">Редагувати</button>
 						</div>
-						<a href="#"><img src="img/arrow-down.svg" alt=""></a>
-					</div>
+						
+
+						<!-- Присвоєня тексту з інпута в js -->
+						<div class="block-personal-opened-change" id="mainFrameTwo">
+							<ul>
+								<li>
+									<label for="" class="label-personal"><p>Прізвище</p></label>
+									<input id="getSecondName" class="input-personal" type="text">
+								</li>
+
+								<li>														
+									<label for="" class="label-personal"><p>Стать</p></label>
+									<select name="" id="getMaleFemale" class="input-personal">
+										<option value="Чоловіча">Чоловіча</option>
+										<option value="Жіноча">Жіноча</option>
+									</select>
+								</li>
+								<li>
+									<label for="" class="label-personal"><p>Ім'я</p></label>
+									<input id="getName" class="input-personal" type="text">
+								</li>
+								<li>
+									<label for="" class="label-personal"><p>Дата народження</p></label>
+									<input id="getBirthsday" class="input-personal" type="date">
+								</li>
+								<li>
+									<label for="" class="label-personal"><p>По батькові</p></label>
+									<input id="getFatherName" class="input-personal" type="text">
+								</li>
+								<li>
+									<label for="" class="label-personal"><p>Мова</p></label>
+									<select name="" id="getLanguage" class="input-personal">
+										<option value="Українська">Українська</option>
+										<option value="English">English</option>
+									</select>
+								</li>
+							</ul>
+
+							<button class="btnPersonalOpenedChange" id="btnConfirm-personal" onclick="confirmm()">Зберегти</button>
+							<button class="btnPersonalOpenedChange" id="btnConfirm-personal" onclick="showBack()">Скасувати</button>
+						</div>
+					</details>
+
 
 					<div class="block-personal2 bg-personal">
 						<div class="svg-text-personal">
@@ -227,6 +303,6 @@
 		</div>
 	</footer>
 
-    <script src="script.js"></script>
+    <script src="account.js"></script>
 </body>
 </html>
