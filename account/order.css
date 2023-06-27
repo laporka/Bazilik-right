@@ -812,7 +812,7 @@ body{
 	margin-bottom: 58px;
 }
 
-.empty-my-orders button{
+.emo-btn{
 	width: 160px;
 	height: 54px;
 	background-color: #74BDD3;
@@ -820,6 +820,11 @@ body{
 	font-size: 20px;
 	font-weight: 400;
 	font-family: 'Inter';
+	transition: all 0.2s ease-in-out;
+}
+.emo-btn:hover{
+	color: rgba(255, 255, 255, 1);
+  	box-shadow: 0 5px 15px rgb(82, 179, 192);
 }
 .empty-my-orders a{
 	color: #000000;

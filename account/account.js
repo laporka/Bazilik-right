@@ -83,3 +83,10 @@ function hideConfirmPopup() {
 
 //   btnEnable.removeAttribute('disabled');
 // }
+
+const form = document.getElementById('form');
+form.addEventListener('submit', formSend)
+
+async function formSend(e){
+  e.preventDefault();
+}
