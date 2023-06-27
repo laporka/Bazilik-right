@@ -1059,6 +1059,10 @@ body{
 	border-radius: 10px;
 	padding: 8px 12px;
 }
+.input-personal:focus{
+	border: #74BDD3 1px solid;
+	box-shadow: 0 1px 15px rgb(82, 179, 192);
+}
 .btnPersonalOpened{
 	width: 200px;
 	height: 40px;
@@ -1094,7 +1098,7 @@ body{
 
 
 /* LOGIN DETAILS */
-.block-personal4[open] .login-chevron{
+.login-sections[open] .login-chevron{
 	transform: rotate(-180deg);
 }
 

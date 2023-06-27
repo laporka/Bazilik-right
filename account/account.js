@@ -76,3 +76,10 @@ function EmailConfirm() {
 function hideConfirmPopup() {
   document.getElementById('LoginPopupConfirm').style.visibility="hidden";
 }
+
+
+// function Enable() {
+//   let btnEnable = document.getElementById('btnConfirm-personal');
+
+//   btnEnable.removeAttribute('disabled');
+// }
