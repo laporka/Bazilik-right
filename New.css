@@ -447,3 +447,30 @@ body{
 	font-family: 'Raleway';
 	font-weight: 400;
 }
+
+.block-personal{
+	display: flex;
+	flex-direction: column;
+}
+.text-arrow-up{
+	display: flex;
+	justify-content:space-between;
+	align-items: center;	
+}
+
+
+.seller[open] .New-seller-chevron{
+	transform: rotate(-180deg);
+}
+.brends[open] .New-brends-chevron{
+	transform: rotate(-180deg);
+}
+.Price[open] .New-price-chevron{
+	transform: rotate(-180deg);
+}
+.Filters{
+	padding: 8px;
+	background-color: #EAEAEA;
+	width: 306px;
+	height: 625px;
+}
