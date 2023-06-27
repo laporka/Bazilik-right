@@ -968,13 +968,41 @@ body{
 	background-color: #000000;
 }
 
+.a-personal .profile{
+	color: rgba(255, 255, 255, 1);
+	background-color: #74BDD3;
+  	box-shadow: 0 5px 15px rgb(82, 179, 192);
+	border: none;
+	border-radius: 8px;
+}
 
+.a-data button{
+	transition: all 0.2s ease-in-out;
+}
+.a-personal button .img-text p{
+	color: rgba(255, 255, 255, 1);
+}
+.a-data button:hover{
+	color: rgba(255, 255, 255, 1);
+	background-color: #74BDD3;
+  	box-shadow: 0 5px 15px rgb(82, 179, 192);
+	border: none;
+	border-radius: 8px;
+}
+.a-data button:hover .img-text p{
+	color: rgba(255, 255, 255, 1);
+}
 .a-data p{
 	color: #000000;
 }
 
+
+/* PERSONAL DETAILS */
 .personal-section[open] .personal-chevron{
 	transform: rotate(-180deg);
+}
+.block-personal-opened{
+	padding-bottom: 26px;
 }
 .block-personal-opened ul{
 	margin-left: 112px;
@@ -1008,6 +1036,7 @@ body{
 /* Присвоєня */
 .block-personal-opened-change{
 	display: none;
+	padding-bottom: 26px;
 }
 .block-personal-opened-change ul{
 	margin-left: 112px;
@@ -1032,12 +1061,190 @@ body{
 }
 .btnPersonalOpened{
 	width: 200px;
+	height: 40px;
+	border-radius: 8px;
 	padding: 6px 8px;
-	background-color: lawngreen;
+	background-color: hsl(90, 100%, 49%);
+	margin-left: 112px;
+	transition: all 0.2s ease-in-out;
+}
+.btnPersonalOpened:hover{
+	color: rgba(255, 255, 255, 1);
+  	box-shadow: 0 5px 15px rgb(124, 252, 0);
 }
 
+.btnChange{
+	margin-left: 112px;
+}
 .btnPersonalOpenedChange{
 	width: 200px;
+	height: 40px;
 	padding: 6px 8px;
 	background-color: #74BDD3;
+	transition: all 0.2s ease-in-out;
+	border-radius: 8px;
 }
+.Change2{
+	margin-left: 22px;
+}
+.btnPersonalOpenedChange:hover{
+	color: rgba(255, 255, 255, 1);
+  	box-shadow: 0 5px 15px rgb(82, 179, 192);
+}
+
+
+/* LOGIN DETAILS */
+.block-personal4[open] .login-chevron{
+	transform: rotate(-180deg);
+}
+
+/* LOGIN P AND EMAIL P */
+.personal-row{
+	margin-left: 112px;
+}
+.p-margin{
+	margin-bottom: 8px;
+	font-size: 14px;
+}
+.p-fonts{
+	font-size: 16px;
+	font-family:Arial, Helvetica, sans-serif; 
+	font-weight: 600;
+}
+
+
+/* BUTTONS CONFIRM AND CHANGE */
+.confirm-email{
+	margin-left: 112px;
+	margin-top: 16px;
+	background-color: #74BDD3;
+	border-radius: 10px;
+	width: 176px;
+	padding: 1px 16px;
+	height: 40px;
+	transition: all 0.2s ease-in-out;
+}
+.confirm-email:hover{
+	color: rgba(255, 255, 255, 1);
+  	box-shadow: 0 5px 15px rgb(82, 179, 192);
+}
+.change-email{
+	margin-left: 112px;
+	margin-top: 36px;
+	background-color: #74BDD3;
+	border-radius: 10px;
+	width: 150px;
+	padding: 1px 16px;
+	height: 40px;
+	transition: all 0.2s ease-in-out;
+}
+.change-email:hover{
+	color: rgba(255, 255, 255, 1);
+  	box-shadow: 0 5px 15px rgb(82, 179, 192);
+}
+
+
+.popup-loginConfirm{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+    position: fixed;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+	visibility: hidden;
+}
+.container-login-popup{
+	position: absolute;
+	margin: 0 auto;
+	background-color: #FFFFFF;
+	width: 640px;
+	height: auto;
+	border-radius: 8px;
+}
+
+/* HEAD MODAL */
+.modal-head{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 640px;
+	height: 57px;
+	padding: 0px 24px;
+}
+.modal-head img{
+	width: 16px;
+	cursor: pointer;
+}
+.modal-head p{
+	font-size: 24px;
+	font-weight: 600;
+}
+
+/* CONTENT */
+.modal-content{
+	padding: 24px;
+}
+.text-email{
+	border: 1px #C4C1BC solid;
+	border-radius: 10px;
+	padding: 16px;
+	font-size: 16px;
+	font-weight: 400px;
+	margin-bottom: 16px;
+}
+
+.input-cod p{
+	font-size: 14px;
+	font-weight: 400;
+	color: #BABABA;
+	margin-bottom: 4px;
+}
+.input-cod input{
+	width: 100%;
+	height: 40px;
+	padding: 1px 12px;
+	border: #C4C1BC 1px solid;
+	border-radius: 10px;
+}
+
+/* BUTTONS POPUP */
+.button-emailConfirm{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-top: 16px;
+}
+
+.btnConfirm{
+	width: 125px;
+	height: 40px;
+	padding-left: 16px;
+	padding-right: 16px;
+	background-color: #74BDD3;
+	border-radius: 8px;
+	font-size: 16px;
+	font-weight: 400px;
+	transition: all 0.2s ease-in-out;
+}
+.btnConfirm:hover{
+	color: rgba(255, 255, 255, 1);
+  	box-shadow: 0 5px 15px rgb(82, 179, 192);
+}
+
+.btnCancel{
+	height: 40px;
+	margin-left: 16px;
+	transition: all 0.2s ease-in-out;
+
+}
+.btnCancel:hover{
+	color: red;
+	text-decoration: underline;
+	text-underline-offset: 8px;
+}
+

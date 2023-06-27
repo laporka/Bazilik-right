@@ -811,16 +811,6 @@ body{
 	font-family: 'Inter';
 	margin-bottom: 58px;
 }
-
-.empty-my-orders button{
-	width: 160px;
-	height: 54px;
-	background-color: #74BDD3;
-	border-radius: 10px;
-	font-size: 20px;
-	font-weight: 400;
-	font-family: 'Inter';
-}
 .empty-my-orders a{
 	color: #000000;
 }
@@ -858,7 +848,7 @@ body{
 	margin-bottom: 58px;
 }
 
-.empty-my-wish button{
+.emw-btn{
 	width: 175px;
 	height: 54px;
 	background-color: #74BDD3;
@@ -866,6 +856,11 @@ body{
 	font-size: 20px;
 	font-weight: 400;
 	font-family: 'Inter';
+	transition: all 0.2s ease-in-out;
+}
+.emw-btn:hover{
+	color: rgba(255, 255, 255, 1);
+  	box-shadow: 0 5px 15px rgb(82, 179, 192);
 }
 .empty-my-wish a{
 	color: #000000;
@@ -974,9 +969,32 @@ body{
 }
 
 
+.a-wish .Wish-list{
+	color: rgba(255, 255, 255, 1);
+	background-color: #74BDD3;
+  	box-shadow: 0 5px 15px rgb(82, 179, 192);
+	border: none;
+	border-radius: 8px;
+}
+
+.a-data button{
+	transition: all 0.2s ease-in-out;
+}
+.a-wish button .img-text p{
+	color: rgba(255, 255, 255, 1);
+}
+.a-data button:hover{
+	color: rgba(255, 255, 255, 1);
+	background-color: #74BDD3;
+  	box-shadow: 0 5px 15px rgb(82, 179, 192);
+	border: none;
+	border-radius: 8px;
+}
+.a-data button:hover .img-text p{
+	color: rgba(255, 255, 255, 1);
+}
 .a-data p{
 	color: #000000;
 }
-
 
 

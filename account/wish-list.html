@@ -10,97 +10,6 @@
 </head>
 <body>
 
-	<!-- Popup-User-Enter -->
-	<div id="popup" class="popup">
-		<div class="container-Enter">
-			
-			<a href=""><img class="img-close" src="img/x-symbol-svgrepo-com.svg" alt=""></a>
-
-			<div class="content-enter">
-
-				<div class="content">
-
-					
-					
-					<div class="text-close">
-						<p>Вхід</p>
-					</div>
-
-
-					<div class="filds">
-						<div class="email-enter">
-							<p>Ел.почта або телефон</p>
-							<input type="email" placeholder="Введіть ел. пошту / телефон" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
-						</div>
-
-
-						<div class="pass-enter">
-							<p>Пароль</p>
-							<input type="password" placeholder="Введіть пароль" required min="8" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
-						</div>
-					</div>
-
-					
-					<div class="round-remember">
-						<input type="checkbox" id="remember">
-						<label for="remember">Запам'ятати</label>
-					</div>
-
-
-					<div class="btn-reg-btn">
-						<a href="#personal-data"><button>Увійти</button></a>
-						<a href="#popup-up">Зареєструватися</a>
-					</div>
-
-				</div>
-
-			</div>	
-		</div>
-	</div>
-
-
-	<!-- TEST -->
-	<!-- Popup-User-up -->
-	<div id="popup-up" class="popup-up">
-		<div class="container-Enter">
-
-			<a href=""><img class="img-close" src="img/x-symbol-svgrepo-com.svg" alt=""></a>
-
-			<div class="content-enter">
-			
-				<div class="content">
-					<div class="text-close-up">
-						<p>Реєстрація</p>
-					</div>
-
-					<div class="filds">
-						<div class="email-enter">
-							<p>Ел.почта або телефон</p>
-							<input type="email" placeholder="Введіть ел. пошту / телефон" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
-						</div>
-
-
-						<div class="pass-enter-up">
-							<p>Пароль</p>
-							<input type="password" placeholder="Введіть пароль" required min="8" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
-						</div>
-					</div>
-
-					<div class="btn-reg-enter">
-						<button>Зареєструватися</button>
-						<div class="p-a">
-							<p>Уже є аккаунт?</p>
-							<a href="#popup">Увійти</a>
-						</div>	
-					</div>
-
-				</div>	
-
-			</div>
-		</div>
-	</div>
-	<!-- TEST -->
-
 	<!-- TEST-2 START-->
 	<div id="personal-data" class="account-personal-data">
 		<!-- HEADER -->
@@ -157,7 +66,7 @@
 				</button></a>
 
 
-				<a href="./wish-list.html" class="a-data">
+				<a href="./wish-list.html" class="a-wish">
 				<button class="Wish-list focus">
 					<div class="img-text">
 						<img src="img/heart.svg" alt="">
@@ -165,21 +74,21 @@
 					</div>
 				</button></a>
 
-
+				<a href="" class="a-data">
 				<button class="history focus">
 					<div class="img-text">
 						<img src="img/search-zoom-in.svg" alt="">
 						<p>Історія перегляду</p>
 					</div>
-				</button>
+				</button></a>
 
-
+				<a href="" class="a-data">
 				<button class="notification focus">
 					<div class="img-text">
 						<img src="img/notification.svg" alt="">
 						<p>Сповіщення</p>
 					</div>
-				</button>
+				</button></a>
 
 				<button class="empty focus">
 					<div class="img-text">
@@ -207,7 +116,7 @@
 					<div class="text-btn-my-orders">
 						<p class="sorry">Ой! Здається тут пусто.</p>
 						<p class="mini-sorry">Створіть перший список</p>
-						<a href="#popup-create-list"><button>Створити</button></a>
+						<a href="#popup-create-list"><button class="emw-btn">Створити</button></a>
 					</div>	
 				</div>
 			</div>

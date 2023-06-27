@@ -974,6 +974,30 @@ body{
 }
 
 
+.a-orders .My-orders{
+	color: rgba(255, 255, 255, 1);
+	background-color: #74BDD3;
+  	box-shadow: 0 5px 15px rgb(82, 179, 192);
+	border: none;
+	border-radius: 8px;
+}
+
+.a-data button{
+	transition: all 0.2s ease-in-out;
+}
+.a-orders button .img-text p{
+	color: rgba(255, 255, 255, 1);
+}
+.a-data button:hover{
+	color: rgba(255, 255, 255, 1);
+	background-color: #74BDD3;
+  	box-shadow: 0 5px 15px rgb(82, 179, 192);
+	border: none;
+	border-radius: 8px;
+}
+.a-data button:hover .img-text p{
+	color: rgba(255, 255, 255, 1);
+}
 .a-data p{
 	color: #000000;
 }

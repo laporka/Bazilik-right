@@ -49,15 +49,17 @@
 
 
 			<div class="listOFblocks">
-				<a href="./account.html" class="a-data"><button class="profile focus">
+				<a href="./account.html" class="a-personal">
+				<button class="profile focus">
 					<div class="img-text">
 						<img src="img/user.svg" alt="">
-						<p>Ім'я користувача</p>
+						<p id="Enter">Ім'я користувача</p>
 					</div>
 				</button></a>
 <!-- DETAILS робити так бо воно відкриває просто на голове summary а на те що відкривається div -->
 
-				<a href="./order.html" class="a-data"><button class="My-orders focus">
+				<a href="./order.html" class="a-data">
+				<button class="My-orders focus">
 					<div class="img-text">
 						<img src="img/orders.svg" alt="">
 						<p>Мої замовлення</p>
@@ -73,21 +75,21 @@
 					</div>
 				</button></a>
 
-
+				<a href="" class="a-data">
 				<button class="history focus">
 					<div class="img-text">
 						<img src="img/search-zoom-in.svg" alt="">
 						<p>Історія перегляду</p>
 					</div>
-				</button>
+				</button></a>
 
-
+				<a href="" class="a-data">
 				<button class="notification focus">
 					<div class="img-text">
 						<img src="img/notification.svg" alt="">
 						<p>Сповіщення</p>
 					</div>
-				</button>
+				</button></a>
 
 				<button class="empty focus">
 					<div class="img-text">
@@ -188,8 +190,10 @@
 								</li>
 							</ul>
 
-							<button class="btnPersonalOpenedChange" id="btnConfirm-personal" onclick="confirmm()">Зберегти</button>
-							<button class="btnPersonalOpenedChange" id="btnConfirm-personal" onclick="showBack()">Скасувати</button>
+							<div class="btnChange">
+								<button class="btnPersonalOpenedChange" id="btnConfirm-personal" onclick="confirmm()">Зберегти</button>
+								<button class="btnPersonalOpenedChange Change2" id="btnConfirm-personal" onclick="showBack()">Скасувати</button>
+							</div>
 						</div>
 					</details>
 
@@ -210,20 +214,38 @@
 						<a href="#"><img src="img/arrow-down.svg" alt=""></a>
 					</div>
 
-					<div class="block-personal4 bg-personal">
-						<div class="svg-text-personal">
-							<img src="img/lock.svg" alt="">
-							<p>Логін</p>
+					<details class="login-sections bg-personal">
+						<summary class="block-personal">
+							<div class="svg-text-personal">
+								<img src="img/lock.svg" alt="">
+								<p>Логін</p>
+							</div>
+
+							<img class="login-chevron" src="img/arrow-down.svg" alt="">
+						</summary>
+
+						<div class="block-personal-opened">
+							<div class="personal-row">
+								<p class="p-margin">Логін (електрона пошта)</p>
+
+								<!-- Зробити попап де буде input де вводиться почта і його значення передається на тег p(id="Email") -->
+								<p class="p-fonts" id="Email">kns198006@gmail.com</p>
+							</div>
+
+								<div><button class="confirm-email" onclick="EmailConfirm()">Підтвердити</button></div>
+							
+							<!-- HEART тимчасово -->
+							<button class="change-email" onclick="showPopupSend()"><img src="./img/heart.svg" alt=""> Змінити</button>
 						</div>
-						<a href="#"><img src="img/arrow-down.svg" alt=""></a>
-					</div>
+					</details>
 
 					<div class="block-personal5 bg-personal">
-							<div class="svg-text-personal">
-								<img src="img/sms.svg" alt="">
-								<p>Контакти</p>
-							</div>
-							<a href="#"><img src="img/arrow-down.svg" alt=""></a>
+						<div class="svg-text-personal">
+							<img src="img/sms.svg" alt="">
+							<p>Контакти</p>
+						</div>
+
+						<img src="img/arrow-down.svg" alt="">
 					</div>
 					
 				</div>
@@ -303,6 +325,35 @@
 		</div>
 	</footer>
 
+
+	<div id="LoginPopupConfirm" class="popup-loginConfirm">
+		<div class="container-login-popup">
+			<div class="modal-head">
+				<p>Підтвердження почти</p>
+				<img onclick="hideConfirmPopup()" src="./img/x-symbol-svgrepo-com.svg" alt="">
+			</div>
+			
+			<div class="modal-content">
+
+				<div class="text-email">
+					<p>На вашу адресу ел. пошти <strong id="email-confirm">kns198006@gmail.com</strong> відправлено лист з кодом підтвердження</p>
+				</div>
+
+				<div class="input-cod">
+					<p>Код підтвердження</p>
+					<input id="input-cod" type="text">
+				</div>
+
+				<div class="button-emailConfirm">
+					<button class="btnConfirm">Підтвердити</button>
+					<button class="btnCancel" onclick="hideConfirmPopup()">Скасувати</button>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
     <script src="account.js"></script>
+	<script src="../all.js"></script>
 </body>
 </html>
