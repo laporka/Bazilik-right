@@ -47,3 +47,20 @@ function maxG() {
   var mini1=document.getElementById('getMax'); //input max
   mini1.value=rng1.value;
 }
+
+// Popup
+function popupIn() {
+  document.getElementById('popupin').style.visibility="visible";
+}
+function popupUp() {
+  document.getElementById('').style.visibility="visible";
+}
+
+function hidepopupIn() {
+  document.getElementById('LoginPopupConfirm').style.visibility="hidden";
+}
+function hidepopupUp() {
+  document.getElementById('LoginPopupConfirm').style.visibility="hidden";
+}
+
+
