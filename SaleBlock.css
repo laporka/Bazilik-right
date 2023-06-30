@@ -67,10 +67,27 @@ body{
 	column-gap: 52px;
 	justify-content: space-between;
 }
+
+.menu ul:hover a{
+	color: #575757;
+	transition: 0.2s ease-in-out;
+}
+.menu ul:hover a:hover{
+	color: rgb(158, 53, 53);
+	text-decoration: underline;
+	text-underline-offset: 6px;
+	transition: 0.2s ease-in-out;
+}
+
+
+
+.menu_ul a{
+	text-decoration: none;
+	color: #000000;
+}
 .menu_text{
 	font-weight: 400;
 	font-size: 24px;
-	color: black;
 }
 
 
@@ -353,7 +370,7 @@ body{
 
 
 
-/* FOOTER START */
+/* Footer */
 .footer{
 	width: 100%;
 	margin: 0 auto;
@@ -392,9 +409,58 @@ body{
 	column-gap: 14px;
 }
 
+.footer-text-2 ul:hover a{
+	color: #575757;
+	transition: 0.2s ease-in-out;
+}
+.footer-text-2 ul:hover a:hover{
+	color: rgb(158, 53, 53);
+	box-shadow: 0.2px 0 0 currentColor;
+	text-decoration: underline;
+	text-underline-offset: 6px;
+	transition: 0.2s ease-in-out;
+}
+
+.footer-text-3 ul:hover a{
+	color: #575757;
+	transition: 0.2s ease-in-out;
+}
+.footer-text-3 ul:hover a:hover{
+	color: rgb(158, 53, 53);
+	box-shadow: 0.2px 0 0 currentColor;
+	text-decoration: underline;
+	text-underline-offset: 6px;
+	transition: 0.2s ease-in-out;
+}
+.footer-text-4 ul:hover a{
+	color: #575757;
+	transition: 0.2s ease-in-out;
+}
+.footer-text-4 ul:hover a:hover{
+	color: rgb(158, 53, 53);
+	box-shadow: 0.2px 0 0 currentColor;
+	text-decoration: underline;
+	text-underline-offset: 6px;
+	transition: 0.2s ease-in-out;
+}
+.footer-text-5 ul:hover a{
+	color: #575757;
+	transition: 0.2s ease-in-out;
+}
+.footer-text-5 ul:hover a:hover{
+	color: rgb(158, 53, 53);
+	box-shadow: 0.2px 0 0 currentColor;
+	text-decoration: underline;
+	text-underline-offset: 6px;
+	transition: 0.2s ease-in-out;
+}
+
 
 .footer-text-1{
 	text-align: center;
+}
+.footer-text-5 a{
+	color: #000000;
 }
 
 
@@ -413,14 +479,14 @@ body{
 .f-logo{
 	margin-bottom: 25px;
 }
+.f-ps a{
+	color: #000000;
+}
 .f-ps p{
 	margin-bottom: 10px;
 	font-size: 14px;
 	font-weight: 400;
 	font-family: 'Raleway';
-}
-.f-ps a{
-	color: black;
 }
 
 .main-f-text{
@@ -429,7 +495,7 @@ body{
 	font-family: 'Raleway';
 	margin-bottom: 19px;
 }
-/* FOOTER END */
+/* Footer */
 
 
 .minus-sale{

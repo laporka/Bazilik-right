@@ -1,34 +1,36 @@
-var slideIndex = 1;
-showDivs(slideIndex);
+var slideIndex = [1,1];
+var slideId = ["mySlides1", "mySlides2"]
+showDivs(1, 0);
+showDivs(1, 1);
 
-function plusDivs(n) {
-  showDivs(slideIndex += n);
+function plusDivs(n, no) {
+  showDivs(slideIndex[no] += n, no);
 }
 
-function showDivs(n) {
+function showDivs(n, no) {
   var i;
-  var x = document.getElementsByClassName("mySlides");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length} ;
+  var x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}
+  if (n < 1) {slideIndex[no] = x.length}
   for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
+    x[i].style.display = "none";  
   }
-  x[slideIndex-1].style.display = "block";
+  x[slideIndex[no]-1].style.display = "block";  
 }
 
-var slideIndex = 0;
+var myIndex = 0;
 carousel();
 
 function carousel() {
   var i;
-  var x = document.getElementsByClassName("mySlides");
+  var x = document.getElementsByClassName("mySlides1");
   for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
+    x[i].style.display = "none";  
   }
-  slideIndex++;
-  if (slideIndex > x.length) {slideIndex = 1}
-  x[slideIndex-1].style.display = "block";
-  setTimeout(carousel, 4000); // Change image every 2 seconds
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4500);    
 }
 
 // document.getElementById('min').addEventListener('input', () =>{
@@ -48,19 +50,26 @@ function maxG() {
   mini1.value=rng1.value;
 }
 
-// Popup
+Popup
 function popupIn() {
-  document.getElementById('popupin').style.visibility="visible";
+  document.getElementById('popup').style.visibility="visible";
+  document.getElementById('popup-up').style.visibility="hidden";
 }
 function popupUp() {
-  document.getElementById('').style.visibility="visible";
+  document.getElementById('popup-up').style.visibility="visible";
+  document.getElementById('popup').style.visibility="hidden";
 }
 
 function hidepopupIn() {
-  document.getElementById('LoginPopupConfirm').style.visibility="hidden";
+  document.getElementById('popup').style.visibility="hidden";
 }
 function hidepopupUp() {
-  document.getElementById('LoginPopupConfirm').style.visibility="hidden";
+  document.getElementById('popup-up').style.visibility="hidden";
 }
+
+AOS.init();
+
+
+
 
 

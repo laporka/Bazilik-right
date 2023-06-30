@@ -91,6 +91,20 @@ body{
 	column-gap: 52px;
 	justify-content: space-between;
 }
+
+.menu ul:hover a{
+	color: #575757;
+	transition: 0.2s ease-in-out;
+}
+.menu ul:hover a:hover{
+	color: rgb(158, 53, 53);
+	text-decoration: underline;
+	text-underline-offset: 6px;
+	transition: 0.2s ease-in-out;
+}
+
+
+
 .menu_ul a{
 	text-decoration: none;
 	color: #000000;
@@ -202,6 +216,7 @@ body{
 	margin-bottom: 100px;
 }
 .container-3{
+	position: relative;
 	max-width: 1392px;
     height: 598px;
     margin: 0 auto;
@@ -248,7 +263,7 @@ body{
 	height: 24px;
 	margin-bottom: 40px;
 }
-.arrows button{
+.glow-btn{
 	color: black;
 	background-color: #74BDD3;
 	font-size: 14px;
@@ -257,6 +272,11 @@ body{
 	border-radius: 7px;
 	width: 165px;
 	height: 36px;
+	transition: all 0.2s ease-in-out;
+}
+.glow-btn:hover{
+	color: rgba(255, 255, 255, 1);
+  	box-shadow: 0 5px 15px rgb(82, 179, 192);
 }
 
 
@@ -829,7 +849,51 @@ body{
 	column-gap: 14px;
 }
 
+.footer-text-2 ul:hover a{
+	color: #575757;
+	transition: 0.2s ease-in-out;
+}
+.footer-text-2 ul:hover a:hover{
+	color: rgb(158, 53, 53);
+	box-shadow: 0.2px 0 0 currentColor;
+	text-decoration: underline;
+	text-underline-offset: 6px;
+	transition: 0.2s ease-in-out;
+}
 
+.footer-text-3 ul:hover a{
+	color: #575757;
+	transition: 0.2s ease-in-out;
+}
+.footer-text-3 ul:hover a:hover{
+	color: rgb(158, 53, 53);
+	box-shadow: 0.2px 0 0 currentColor;
+	text-decoration: underline;
+	text-underline-offset: 6px;
+	transition: 0.2s ease-in-out;
+}
+.footer-text-4 ul:hover a{
+	color: #575757;
+	transition: 0.2s ease-in-out;
+}
+.footer-text-4 ul:hover a:hover{
+	color: rgb(158, 53, 53);
+	box-shadow: 0.2px 0 0 currentColor;
+	text-decoration: underline;
+	text-underline-offset: 6px;
+	transition: 0.2s ease-in-out;
+}
+.footer-text-5 ul:hover a{
+	color: #575757;
+	transition: 0.2s ease-in-out;
+}
+.footer-text-5 ul:hover a:hover{
+	color: rgb(158, 53, 53);
+	box-shadow: 0.2px 0 0 currentColor;
+	text-decoration: underline;
+	text-underline-offset: 6px;
+	transition: 0.2s ease-in-out;
+}
 
 
 .footer-text-1{
@@ -854,6 +918,9 @@ body{
 }
 .f-logo{
 	margin-bottom: 25px;
+}
+.f-ps a{
+	color: #000000;
 }
 .f-ps p{
 	margin-bottom: 10px;
@@ -882,16 +949,35 @@ body{
     margin: 0 auto;
     width: 100%;
     height: 100%;
-    opacity: 0;
-    visibility: hidden;
     background-color: rgba(0,0,0,0.4);
+	visibility: hidden;
 }
-.popup:target{
-    opacity: 99;
-    visibility: visible;
-    transition: 0.5s all;
+.X-btn{
+	width: 24px;
+	height: 24px;
+	position: absolute;
+	top: 14px;
+	right: 14px;
 }
+/* .X-btn:hover{
+	fill: rgb(158, 53, 53);
+	transition: all 0.2s ease-in-out;
+} */
 
+
+
+.register{
+    color: #712525;
+    font-size: 16px;
+    font-weight: 400;
+	/* transition: 0.2s ease-in-out; */
+}
+.register:hover{
+	transition: 0.2s ease-in-out;
+	color: #74BDD3;
+	text-decoration: underline;
+	text-underline-offset: 8px;
+}
 
 .container-Enter{
     position: relative;
@@ -918,16 +1004,6 @@ body{
 .content{
 	max-width: 328px;
 	height: 336px;
-}
-
-
-
-.img-close{
-	width: 24px;
-	height: 24px;
-	position: absolute;
-	top: 14px;
-	right: 14px;
 }
 
 .text-close{
@@ -1013,21 +1089,31 @@ body{
 .btn-reg-btn{
     width: 328px;
     height: 78px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
 }
-.btn-reg-btn button{
+.signIn{
     width: 328px;
     height: 41px;
     display: flex;
     justify-content: center;
     border-radius: 10px;
-    background-color: #000000;
-    color: #FFFFFF;
+    background-color: #74BDD3;
+    color: #000000;
     padding: 10px 133.5px;
     font-size: 18px;
     font-weight: 400;
     font-family: 'Raleway';
     margin-bottom: 18px;
 }
+.signIn:hover{
+	color: #FFFFFF;
+	transition: all 0.2s ease-in-out;
+	box-shadow: 0 5px 15px rgb(89, 142, 180);
+}
+
 .btn-reg-btn a{
     color: #712525;
     font-size: 16px;
@@ -1053,14 +1139,8 @@ body{
     margin: 0 auto;
     width: 100%;
     height: 100%;
-	opacity: 0;
-	visibility: hidden;
     background-color: rgba(0,0,0,0.4);
-}
-.popup-up:target{
-    opacity: 99;
-    visibility: visible;
-    transition: 0.5s all;
+	visibility: hidden;
 }
 
 
@@ -1086,29 +1166,44 @@ body{
 }
 
 
-.btn-reg-enter a{
+.enter-btn{
     color: #712525;
     font-size: 16px;
     font-weight: 400;
-    font-family: 'Raleway';
+	/* transition: 0.2s ease-in-out; */
 }
+.enter-btn:hover{
+	transition: 0.2s ease-in-out;
+	color: #74BDD3;
+	text-decoration: underline;
+	text-underline-offset: 8px;
+}
+
+
+
 .btn-reg-enter{
     width: 322px;
     height: 76px;
 }
-.btn-reg-enter button{
+.register-btn{
     width: 322px;
     height: 42px;
     display: flex;
     justify-content: center;
     border-radius: 10px;
-    background-color: #000000;
-    color: #FFFFFF;
+    background-color: #74BDD3;
+    color: #000000;
     padding: 10px 133.5px;
     font-size: 18px;
     font-weight: 400;
     font-family: 'Raleway';
     margin-bottom: 24px;
+	
+}
+.register-btn:hover{
+	color: #FFFFFF;
+	transition: all 0.2s ease-in-out;
+	box-shadow: 0 5px 15px rgb(89, 142, 180);
 }
 .p-a{
 	display: flex;
@@ -1368,3 +1463,124 @@ body{
 	visibility: visible;
 }
 /* Account-personal END */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ULTRA ALL */
+/* FOR SLIDER  from to*/
+.w3-animate-left{
+	position:relative;
+	animation:animateleft 0.4s
+}
+@keyframes animateleft{
+	from{left:-300px;opacity:0}
+ 	to{left:0;opacity:1}
+}
+
+.w3-animate-right{
+	position:relative;
+	animation:animateright 0.4s
+}
+@keyframes animateright{
+	from{right:-300px;opacity:0}
+ 	to{right:0;opacity:1}
+}
+
+.w3-animate-top{
+	position:relative;
+	animation:animatetop 0.4s
+}
+@keyframes animatetop{
+	from{top:-300px;opacity:0}
+ 	to{top:0;opacity:1}
+}
+
+.w3-animate-bottom{
+	position:relative;
+	animation:animatebottom 0.4s
+}
+@keyframes animatebottom{
+	from{bottom:-300px;opacity:0}
+ 	to{bottom:0;opacity:1}
+}
+
+/* FOR SLIDER OPACITY 0 */
+.w3-animate-fading{
+	animation:fading 10s infinite
+}
+@keyframes fading{
+	0%{opacity:0}
+	50%{opacity:1}
+	100%{opacity:0}}
+
+.w3-animate-opacity{
+	animation:opac 0.8s
+}
+@keyframes opac{
+	from{opacity:0} 
+	to{opacity:1}
+}
+
+
+.w3-animate-zoom-logo{
+	animation:animatezoom 0.6s
+}
+@keyframes animatezoom{
+	from{transform:scale(0)}
+	to{transform:scale(1)}
+}
+.w3-animate-zoom-text{
+	animation:animatezoom 1s
+}
+@keyframes animatezoom{
+	from{transform:scale(0)}
+	to{transform:scale(1)}
+}
+.w3-animate-zoom-btn{
+	animation:animatezoom 1.5s
+}
+@keyframes animatezoom{
+	from{transform:scale(0)}
+	to{transform:scale(1)}
+}
+
+
+.doom{
+	animation: zoomIn .2s;
+    animation-duration: 0.2s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: _ngcontent-rz-client-c6_zoomIn;
+}
+@keyframes zoomIn{
+	0%{
+		opacity:0;
+		transform:scale3d(.3,.3,.3)
+	}
+	50%{
+		opacity:1
+	}
+}
+
