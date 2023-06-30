@@ -90,6 +90,20 @@ body{
 	column-gap: 52px;
 	justify-content: space-between;
 }
+
+.menu ul:hover a{
+	color: #575757;
+	transition: 0.2s ease-in-out;
+}
+.menu ul:hover a:hover{
+	color: rgb(158, 53, 53);
+	text-decoration: underline;
+	text-underline-offset: 6px;
+	transition: 0.2s ease-in-out;
+}
+
+
+
 .menu_ul a{
 	text-decoration: none;
 	color: #000000;
@@ -98,6 +112,7 @@ body{
 	font-weight: 400;
 	font-size: 24px;
 }
+
 
 
 /* LSI and menu CLOSE */
@@ -192,16 +207,18 @@ body{
 }
 
 
+/* Footer */
 .footer{
 	width: 100%;
 	margin: 0 auto;
 	background-color: #FFFFFF;
-	box-shadow: #000000 4px 4px 50px;
+	box-shadow: #000000 0px 0px 50px;
 }
 .container-foot{
 	max-width: 1392px;
 	padding-bottom: 24px;
 	margin: 0 auto;
+	
 }
 .upper-footer{
 	width: 1392px;
@@ -229,7 +246,51 @@ body{
 	column-gap: 14px;
 }
 
+.footer-text-2 ul:hover a{
+	color: #575757;
+	transition: 0.2s ease-in-out;
+}
+.footer-text-2 ul:hover a:hover{
+	color: rgb(158, 53, 53);
+	box-shadow: 0.2px 0 0 currentColor;
+	text-decoration: underline;
+	text-underline-offset: 6px;
+	transition: 0.2s ease-in-out;
+}
 
+.footer-text-3 ul:hover a{
+	color: #575757;
+	transition: 0.2s ease-in-out;
+}
+.footer-text-3 ul:hover a:hover{
+	color: rgb(158, 53, 53);
+	box-shadow: 0.2px 0 0 currentColor;
+	text-decoration: underline;
+	text-underline-offset: 6px;
+	transition: 0.2s ease-in-out;
+}
+.footer-text-4 ul:hover a{
+	color: #575757;
+	transition: 0.2s ease-in-out;
+}
+.footer-text-4 ul:hover a:hover{
+	color: rgb(158, 53, 53);
+	box-shadow: 0.2px 0 0 currentColor;
+	text-decoration: underline;
+	text-underline-offset: 6px;
+	transition: 0.2s ease-in-out;
+}
+.footer-text-5 ul:hover a{
+	color: #575757;
+	transition: 0.2s ease-in-out;
+}
+.footer-text-5 ul:hover a:hover{
+	color: rgb(158, 53, 53);
+	box-shadow: 0.2px 0 0 currentColor;
+	text-decoration: underline;
+	text-underline-offset: 6px;
+	transition: 0.2s ease-in-out;
+}
 
 
 .footer-text-1{
@@ -254,6 +315,9 @@ body{
 }
 .f-logo{
 	margin-bottom: 25px;
+}
+.f-ps a{
+	color: #000000;
 }
 .f-ps p{
 	margin-bottom: 10px;
