@@ -1572,7 +1572,7 @@ body{
     animation-direction: normal;
     animation-fill-mode: none;
     animation-play-state: running;
-    animation-name: _ngcontent-rz-client-c6_zoomIn;
+    animation-name: zoomIn;
 }
 @keyframes zoomIn{
 	0%{
