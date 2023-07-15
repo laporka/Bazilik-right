@@ -542,3 +542,360 @@ body{
 	width: 306px;
 	height: 625px;
 }
+
+
+
+/* POPUPS */
+/* Popup-User-Enter */
+.popup{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+    position: fixed;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+	visibility: hidden;
+}
+.X-btn{
+	width: 24px;
+	height: 24px;
+	position: absolute;
+	top: 14px;
+	right: 14px;
+}
+/* .X-btn:hover{
+	fill: rgb(158, 53, 53);
+	transition: all 0.2s ease-in-out;
+} */
+
+
+
+.register{
+    color: #712525;
+    font-size: 16px;
+    font-weight: 400;
+	/* transition: 0.2s ease-in-out; */
+}
+.register:hover{
+	transition: 0.2s ease-in-out;
+	color: #74BDD3;
+	text-decoration: underline;
+	text-underline-offset: 8px;
+}
+
+.container-Enter{
+    position: relative;
+    top: 150px;
+	max-width: 912px;
+	height: 464px;
+	margin: 0 auto;
+	background-color: #FFFFFF;
+	border-radius: 15px;
+    border: #BABABA solid 1px;
+}
+.content-enter{
+	max-width: 528px;
+	height: 384px;
+	border: #BABABA solid 1px;
+	border-radius: 10px;
+	margin: 0 auto;
+	margin-top: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: #000000 4px 4px 20px;
+}
+.content{
+	max-width: 328px;
+	height: 336px;
+}
+
+.text-close{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 328px;
+	height: 60px;
+	margin-bottom: 12px;
+	border: #000000 solid 1px;
+	border-radius: 15px 15px 0px 0px;
+}
+.text-close p{
+	font-size: 24px;
+	font-weight: 400;
+	font-family: 'Raleway';
+}
+
+
+.email-enter{
+	width: 322px;
+	height: 58px;
+	margin-bottom: 20px;
+}
+.email-enter p{
+	font-size: 12px;
+	font-weight: 600;
+	font-family: 'Raleway';
+	margin-bottom: 4px;
+}
+.email-enter input[type="email"]{
+	width: 328px;
+	height: 40px;
+	background-color: #ECECEC;
+	border-radius: 10px;
+	padding-left: 13px;
+	font-family: 'Italic';
+	font-size: 14px;
+	font-weight: 400;
+}
+.email-enter input[type="email"]:valid{
+	border: none;
+	outline:#FF3F3F solid 1px;
+}
+
+
+.pass-enter p{
+	font-weight: 600;
+	font-size: 12px;
+	font-family: 'Raleway';
+	margin-bottom: 4px;
+}
+.pass-enter input[type="password"]{
+	width: 328px;
+	height: 40px;
+	background-color: #ECECEC;
+	border-radius: 10px;
+	font-size: 14px;
+	font-weight: 400;
+	padding-left: 13px;
+	font-family: 'Italic';
+}
+.pass-enter input:valid{
+	border: none;
+	outline:#FF3F3F solid 1px;
+}
+
+
+
+.pass-enter{
+    margin-bottom: 12px;
+}
+.round-remember{
+    margin-bottom: 14px;
+}
+.round-remember label{
+	font-weight: 400;
+	font-size: 12px;
+	font-family: 'Raleway';
+}
+
+
+.btn-reg-btn{
+    width: 328px;
+    height: 78px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+}
+.signIn{
+    width: 328px;
+    height: 41px;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: #74BDD3;
+    color: #000000;
+    padding: 10px 133.5px;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Raleway';
+    margin-bottom: 18px;
+}
+.signIn:hover{
+	color: #FFFFFF;
+	transition: all 0.2s ease-in-out;
+	box-shadow: 0 5px 15px rgb(89, 142, 180);
+}
+
+.btn-reg-btn a{
+    color: #712525;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Raleway';
+    display: flex;
+    justify-content: center;
+}
+.user{
+    width: 24px;
+    height: 24px;
+}
+
+
+
+
+/* SignUP START*/
+.popup-up{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+    position: fixed;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+	visibility: hidden;
+}
+
+
+.text-close-up{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 328px;
+	height: 60px;
+	margin-bottom: 24px;
+	border: #000000 solid 1px;
+	border-radius: 15px 15px 0px 0px;
+	font-size: 24px;
+	font-family: 'Raleway';
+	font-weight: 400;
+}
+.img-close{
+	width: 24px;
+	height: 24px;
+	position: absolute;
+	top: 14px;
+	right: 14px;
+}
+
+
+.enter-btn{
+    color: #712525;
+    font-size: 16px;
+    font-weight: 400;
+	/* transition: 0.2s ease-in-out; */
+}
+.enter-btn:hover{
+	transition: 0.2s ease-in-out;
+	color: #74BDD3;
+	text-decoration: underline;
+	text-underline-offset: 8px;
+}
+
+
+
+.btn-reg-enter{
+    width: 322px;
+    height: 76px;
+}
+.register-btn{
+    width: 322px;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: #74BDD3;
+    color: #000000;
+    padding: 10px 133.5px;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Raleway';
+    margin-bottom: 24px;
+	
+}
+.register-btn:hover{
+	color: #FFFFFF;
+	transition: all 0.2s ease-in-out;
+	box-shadow: 0 5px 15px rgb(89, 142, 180);
+}
+.p-a{
+	display: flex;
+	column-gap: 12px;
+	align-items: center;
+}
+.pass-enter-up{
+    margin-bottom: 26px;
+}
+.pass-enter-up p{
+	font-weight: 600;
+	font-size: 12px;
+	font-family: 'Raleway';
+	margin-bottom: 4px;
+}
+.pass-enter-up input[type="password"]{
+	width: 282px;
+	height: 40px;
+	background-color: #ECECEC;
+	border-radius: 10px;
+	font-size: 14px;
+	font-weight: 400;
+	padding-left: 13px;
+	font-family: 'Italic';
+}
+.pass-enter-up input:valid{
+	border: none;
+	outline:#FF3F3F solid 1px;
+}
+/* SignUP END */
+
+
+
+/* POPUP-CART */
+.popup-cart{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+    position: fixed;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+	visibility: hidden;
+}	
+.container-cart{
+	position: relative;
+    top: 150px;
+	width: 912px;
+	height: 547px;
+	margin: 0 auto;
+	background-color: #FFFFFF;
+	border-radius: 15px;
+    border: #BABABA solid 1px;
+}
+.p-kosh{
+	font-family: 'Raleway';
+	font-size: 24px;
+	font-weight: 600;
+	text-align: center;
+	margin-top: 16px;
+}
+
+
+.content-cart{
+	margin-top: 150px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.content-cart p:nth-child(1){
+	font-family: 'Inter';
+	font-size: 28px;
+	font-weight: 600;
+}
+.content-cart p:nth-child(2){
+	font-family: 'Inter';
+	font-size: 20px;
+	font-weight: 400;
+}
+
+
+.p-cart{
+	display: flex;
+	flex-direction: column;
+	row-gap: 36px;
+}
+/* POPUP-CART */

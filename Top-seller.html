@@ -21,9 +21,9 @@
 					<input type="text" placeholder="Шукати..." class="input_search">
 				</div>
 				<div class="icons">
-					<a href=""><img src="img/heart.svg" alt=""></a>
-					<a href="#popup"><img src="img/user.svg" alt=""></a>
-					<a href=""><img src="img/shopping-cart.svg" alt=""></a>
+					<button><img src="img/heart.svg" alt=""></button>
+					<button onclick="popupIn()"><img src="img/user.svg" alt=""></button>
+					<button onclick="popupCart()"><img src="img/shopping-cart.svg" alt=""></button>
 				</div>
 			</div>
 
@@ -534,6 +534,116 @@
 
 	</div>
 </footer>
+
+
+
+<!-- Popup-User-Enter -->
+<div id="popup" class="popup">
+	<div class="container-Enter">
+		
+		<button class="X-btn" onclick="hidepopupIn()"><img src="./img/x-symbol-svgrepo-com.svg" alt=""></button>
+
+		<div class="content-enter">
+
+			<div class="content">
+
+				
+				
+				<div class="text-close">
+					<p>Вхід</p>
+				</div>
+
+
+				<div class="filds">
+					<div class="email-enter">
+						<p>Ел.почта або телефон</p>
+						<input id="getEnter" type="email" placeholder="Введіть ел. пошту / телефон" required pattern="[a-z0-9_]">
+					</div>
+
+
+					<div class="pass-enter">
+						<p>Пароль</p>
+						<input type="password" placeholder="Введіть пароль" required min="8" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+					</div>
+				</div>
+
+				
+				<div class="round-remember">
+					<input type="checkbox" id="remember">
+					<label for="remember">Запам'ятати</label>
+				</div>
+
+
+				<div class="btn-reg-btn">
+					<a href="./account/account.html"><button class="signIn">Увійти</button></a>
+					<button class="register" onclick="popupUp()">Зареєструватися</button>
+				</div>
+
+			</div>
+
+		</div>	
+	</div>
+</div>
+
+<!-- Popup-User-up -->
+<div id="popup-up" class="popup-up">
+	<div class="container-Enter">
+
+		<button class="X-btn" onclick="hidepopupUp()"><img src="img/x-symbol-svgrepo-com.svg" alt=""></button>
+
+		<div class="content-enter">
+		
+			<div class="content">
+				<div class="text-close-up">
+					<p>Реєстрація</p>
+				</div>
+
+				<div class="filds">
+					<div class="email-enter">
+						<p>Ел.почта або телефон</p>
+						<input type="email" placeholder="Введіть ел. пошту / телефон" required pattern="[a-z0-9_]+[a-z0-9-]+[a-z]{2,4}$">
+					</div>
+
+
+					<div class="pass-enter-up">
+						<p>Пароль</p>
+						<input type="password" placeholder="Введіть пароль" required min="8" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+					</div>
+				</div>
+
+				<div class="btn-reg-enter">
+					<button class="register-btn">Зареєструватися</button>
+					<div class="p-a">
+						<p>Уже є аккаунт?</p>
+						<button class="enter-btn" onclick="popupIn()">Увійти</button>
+					</div>	
+				</div>
+
+			</div>	
+
+		</div>
+	</div>
+</div>
+
+<!-- Popup-CART -->
+<div id="popup-cart" class="popup-cart">
+	<div class="container-cart">
+
+		<button class="X-btn" onclick="hidepopupCart()"><img src="img/x-symbol-svgrepo-com.svg" alt=""></button>
+
+		<p class="p-kosh">Кошик</p>
+
+		<div class="content-cart">
+			<div class="p-cart">
+				<p>Ой! Здається тут пусто.</p>
+				<p>Ви ще нічого не закинули в кошик</p>
+			</div>
+		</div>
+
+	</div>
+</div>
+
+
 
 
 <script src="script.js"></script>
