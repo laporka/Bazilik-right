@@ -1237,236 +1237,64 @@ body{
 
 
 
-
-/* Account-personal START */
-.header-account{
-	box-shadow: #000000 0px 2px 50px ; 
-}
-.account-personal-data{
-	background-color: #FFFFFF;
-}
-.account-display{
-	max-width: 1392px;
-	height: 695px;
+/* POPUP-CART */
+.popup-cart{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+    position: fixed;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+	visibility: hidden;
+}	
+.container-cart{
+	position: relative;
+    top: 150px;
+	width: 912px;
+	height: 547px;
 	margin: 0 auto;
-	display: flex;
-	justify-content: space-between;
-}
-
-
-
-
-
-/* LIFSTofBLOCKS START*/
-.listOFblocks{
-	display: flex;
-	flex-direction: column;
-	row-gap: 20px;
-	margin-top: 6px;
-}
-/* PROFILE START */
-.profile{
-	display: flex;
-	align-items: center;
-	width: 191px;
-	height: 48px;
 	background-color: #FFFFFF;
-	border: #C4C1BC solid 2px;
-} 
-/* PROFILE END */
-
-/* My-orders START */
-.My-orders{
-	display: flex;
-	align-items: center;
-	width: 191px;
-	height: 48px;
-	background-color: #FFFFFF;
-	border: #C4C1BC solid 2px;
+	border-radius: 15px;
+    border: #BABABA solid 1px;
 }
-/* My-orders END */
-
-/* Wish-list START */
-.Wish-list{
-	display: flex;
-	align-items: center;
-	width: 191px;
-	height: 48px;
-	background-color: #FFFFFF;
-	border: #C4C1BC solid 2px;
-}
-/* Wish-list EDN */
-
-/* History START */
-.history{
-	display: flex;
-	align-items: center;
-	width: 191px;
-	height: 48px;
-	background-color: #FFFFFF;
-	border: #C4C1BC solid 2px;
-}
-/* History END */
-
-/* notification START */
-.notification{
-	display: flex;
-	align-items: center;
-	width: 191px;
-	height: 48px;
-	background-color: #FFFFFF;
-	border: #C4C1BC solid 2px;
-}
-/* notification END */
-
-
-
-/* FOR ALL START*/
-
-/* ТУТ БУДЕ прив'язка на айді */
-.focus:focus{
-	background-color: #74BDD3;
+.p-kosh{
+	font-family: 'Raleway';
+	font-size: 24px;
+	font-weight: 600;
+	text-align: center;
+	margin-top: 16px;
 }
 
-.img-text{
+
+.content-cart{
+	margin-top: 150px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	column-gap: 12px;
-	margin-left: 12px;
-}
-.img-text img{
-	width: 24px;
-	height: 24px;
-}
-.img-text p{
-	font-size: 16px;
-	font-family: 'Raleway';
-	font-weight: 400;
-	height: 16px;
 }
 
-.empty{
-	display: flex;
-	align-items: center;
-	width: 191px;
-	height: 48px;
-	background-color: #FFFFFF;
-	border: #C4C1BC solid 2px;
-}
-/* FOR ALL END */
-
-/* LIFSTofBLOCKS END*/
-
-
-/* DISPLAY START-personal-data */
-.account-display{
-	margin-top: 36px;
-}
-.personal-p{
-	text-align: center;
+.content-cart p:nth-child(1){
 	font-family: 'Inter';
+	font-size: 28px;
 	font-weight: 600;
-	font-size: 32px;
-	margin-bottom: 36px;
 }
-.blocks-personal{
-	display: flex;
-	flex-direction: column;
-	row-gap: 30px;
-}
-
-
-
-/* FOR ALL START */
-.bg-personal{
-	width: 1107px;
-	height: 100px;
-	background-color: #FFFFFF;
-	border: #BABABA solid 1px;
-	border-radius: 5px;
-}
-.svg-text-personal{
-	display: flex;
-	justify-content: space-between;
-	column-gap: 28px;
-	align-items: center;
-}
-.svg-text-personal img{
-	width: 48px;
-	height: 48px;
-}
-.svg-text-personal p{
+.content-cart p:nth-child(2){
+	font-family: 'Inter';
 	font-size: 20px;
 	font-weight: 400;
-	font-family: 'Inter';
 }
-/* FOR ALL END  */
 
-/* BLOCK-personal-1 START*/
-.block-personal{
+
+.p-cart{
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 26px 36px;
+	flex-direction: column;
+	row-gap: 36px;
 }
-/* BLOCK-personal-1 END*/
-
-/* BLOCK-personal-2 START*/
-.block-personal2{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 26px 36px;
-}
-/* BLOCK-personal-2 END*/
-
-/* BLOCK-personal-3 START*/
-.block-personal3{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 26px 36px;
-}
-/* BLOCK-personal-3 END*/
-
-/* BLOCK-personal-4 START*/
-.block-personal4{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 26px 36px;
-}
-/* BLOCK-personal-4 END*/
-
-/* BLOCK-personal-5 START*/
-.block-personal5{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 26px 36px;
-}
-/* BLOCK-personal-5 END*/
-
-/* DISPLAY END-personal-data */
-
-.account-personal-data{
-	opacity: 0;
-	visibility: hidden;
-	position: absolute;
-	width: 100%;
-	height: 927px;
-	top: 0px;
-}
-.account-personal-data:target{
-	opacity: 99;
-	visibility: visible;
-}
-/* Account-personal END */
-
-
-
-
+/* POPUP-CART */
+	
+	
 
 
 

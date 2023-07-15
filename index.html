@@ -23,7 +23,7 @@
 					<div class="icons .w3-animate-zoom">
 						<button><img src="img/heart.svg" alt=""></button>
 						<button onclick="popupIn()"><img src="img/user.svg" alt=""></button>
-						<button><img src="img/shopping-cart.svg" alt=""></button>
+						<button onclick="popupCart()"><img src="img/shopping-cart.svg" alt=""></button>
 					</div>
 				</div>
 
@@ -521,6 +521,24 @@
 				</div>	
 
 			</div>
+		</div>
+	</div>
+
+	<!-- Popup-CART -->
+	<div id="popup-cart" class="popup-cart">
+		<div class="container-cart">
+
+			<button class="X-btn" onclick="hidepopupCart()"><img src="img/x-symbol-svgrepo-com.svg" alt=""></button>
+
+			<p class="p-kosh">Кошик</p>
+
+			<div class="content-cart">
+				<div class="p-cart">
+					<p>Ой! Здається тут пусто.</p>
+					<p>Ви ще нічого не закинули в кошик</p>
+				</div>
+			</div>
+
 		</div>
 	</div>
 	

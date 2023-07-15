@@ -50,7 +50,7 @@ function maxG() {
   mini1.value=rng1.value;
 }
 
-Popup
+// Popup
 function popupIn() {
   document.getElementById('popup').style.visibility="visible";
   document.getElementById('popup-up').style.visibility="hidden";
@@ -65,6 +65,17 @@ function hidepopupIn() {
 }
 function hidepopupUp() {
   document.getElementById('popup-up').style.visibility="hidden";
+}
+
+
+
+
+function popupCart() {
+  document.getElementById('popup-cart').style.visibility="visible";
+}
+
+function hidepopupCart() {
+  document.getElementById('popup-cart').style.visibility="hidden";
 }
 
 AOS.init();
