@@ -562,11 +562,12 @@ body{
 /* TEST-2 START */
 	.account-personal-data{
 		background-color: #FFFFFF;
-		height: 927px;
+		height: auto;
+		padding-bottom: 64px;
 	}
 	.account-display{
 		max-width: 1392px;
-		height: 695px;
+		height: auto;
 		margin: 0 auto;
 		display: flex;
 		justify-content: space-between;
@@ -840,49 +841,17 @@ body{
 /* TEST-4 START */
 
 /* My-orders EMPTY START*/
-.empty-my-wish{
+.my-notification{
 	width: 1107px;
-	height: 620px;
+	height: auto;
 	border: #BABABA solid 1px;
 	display: flex;
-	justify-content: center;
+	justify-content: start;
 	align-items: center;
+	padding: 36px 48px;
 }
 
-.text-btn-my-orders{
-	text-align: center;
-}
-.sorry{
-	font-size: 28px;
-	font-weight: 600;
-	font-family: 'Inter';
-	text-align: center;
-	margin-bottom: 36px;
-}
-.mini-sorry{
-	font-size: 20px;
-	font-weight: 400;
-	font-family: 'Inter';
-	margin-bottom: 58px;
-}
 
-.emw-btn{
-	width: 175px;
-	height: 54px;
-	background-color: #74BDD3;
-	border-radius: 10px;
-	font-size: 20px;
-	font-weight: 400;
-	font-family: 'Inter';
-	transition: all 0.2s ease-in-out;
-}
-.emw-btn:hover{
-	color: rgba(255, 255, 255, 1);
-  	box-shadow: 0 5px 15px rgb(82, 179, 192);
-}
-.empty-my-wish a{
-	color: #000000;
-}
 /* My-orders EMPTY END*/
 /* TEST-4 END */
 
@@ -987,7 +956,7 @@ body{
 }
 
 
-.a-wish .Wish-list{
+.a-message .notification{
 	color: rgba(255, 255, 255, 1);
 	background-color: #74BDD3;
   	box-shadow: 0 5px 15px rgb(82, 179, 192);
@@ -1015,4 +984,55 @@ body{
 	color: #000000;
 }
 
+
+/* NOTIFICATION */
+.Metods-Kind{
+	display: flex;
+	column-gap: 128px;
+}
+
+/* METODS */
+.metods{
+	display: flex;
+	flex-direction: column;
+	row-gap: 24px;
+}
+.metods p{
+	font-size: 24px;
+	font-family: 'Raleway';
+	font-weight: 400;
+}
+
+/* KINDS */
+.Kinds{
+	display: flex;
+	flex-direction: column;
+	row-gap: 24px;
+}
+.Kinds p{
+	font-size: 24px;
+	font-family: 'Raleway';
+	font-weight: 400;
+}
+
+/* METODS AND KINDS */
+.chekboxes{
+	display: flex;
+	flex-direction: column;
+	row-gap: 36px;
+}
+.check-text{
+	display: flex;
+	column-gap: 12px;
+	align-items: center;
+}
+.check-text input{
+	width: 24px;
+	height: 24px;
+}
+.check-text label{
+	font-size: 16px;
+	font-family: 'Raleway';
+	font-weight: 400;
+}
 
