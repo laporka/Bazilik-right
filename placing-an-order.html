@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="placing-an-order.css">
+	<link rel="stylesheet" href="reset.css">
+	<title>Test-nav-slider</title>
+	<link rel="shortcut icon" href="img/Logo-icon-colored.svg" type="image/x-icon">
+</head>
+<body>
+
+<header>
+	<div class="header" id="Home">
+        <div class="container-1">
+
+            <div class="lsi">
+                <a href=""><img class="logo-light w3-animate-zoom-logo" src="img/Logo white.svg" alt=""></a>
+                <div class="search">
+                    <input type="text" placeholder="Шукати..." class="input_search">
+                </div>
+                <div class="icons .w3-animate-zoom">
+                    <button><img src="img/heart.svg" alt=""></button>
+                    <button onclick="popupIn()"><img src="img/user.svg" alt=""></button>
+                    <button onclick="popupCart()"><img src="img/shopping-cart.svg" alt=""></button>
+                </div>
+            </div>
+
+            <div class="menu">
+                <ul class="menu_ul">
+                    <li class="menu_text"><a href="#Home">Home</a></li>
+                    <li class="menu_text"><a href="#Sale">Sale</a></li>
+                    <li class="menu_text"><a href="#Top-seller">Top Saller</a></li>
+                    <li class="menu_text"><a href="#New">New</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</header>
+
+
+
+<!-- CONTENT -->
+<main class="content">
+    <div class="container">
+        <p class="container-p">Оформлення замовлення</p>
+
+        <div class="container-content">
+            <main class="container-points">
+
+                <div class="first-point">
+                    <div class="span-p">
+                        <span><p>1</p></span>
+                        <p>Ваші контактні дані</p>
+                    </div>
+
+                    <div class="first-container">
+                        <div class="first-input">
+                            <!-- ----------------------- -->
+                            <div class="grid-input">
+                                <div class="first-lbInput">
+                                    <label for="">Прізвище</label>
+                                    <input type="text" placeholder="Маринюк">
+                                </div>
+                                <!-- ----------------------- -->
+                                <div class="first-lbInput">
+                                    <label for="">Ім’я</label>
+                                    <input type="text" placeholder="Антон">
+                                </div>
+                            </div>
+                            <!-- ----------------------- -->
+                            <div class="grid-input">
+                                <div class="first-lbInput">
+                                    <label for="">Електронна пошта</label>
+                                    <input type="email" placeholder="kns198006@gmail.com">
+                                </div>
+                                <!-- ----------------------- -->
+                                <div class="first-lbInput">
+                                    <label for="">Номер телефона</label>
+                                    <input type="tel" placeholder="+38 068 167 72 17">
+                                </div>
+                            </div>
+                            <!-- ----------------------- -->
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="second-points">
+                    <div class="span-p">
+                        <span><p>2</p></span>
+                        <p>Замовлення</p>
+                    </div>
+
+                    <div class="first-second-container">
+                        <div class="point-change">
+                            <div class="span-p">
+                                <span><p>1</p></span>
+                                <p>Товари</p>
+                            </div>
+
+                            <button class="icon-p">
+                                <img src="./img/notification-status.svg" alt="">
+                                <p>Особисті побажання</p>
+                            </button>
+                        </div>
+
+                        <div class="first-containerSECOND">
+                            <!-- ----------------------- -->
+                            <div class="card">
+                                <div class="img-p">
+                                    <img src="./img/card1.png" alt="">
+                                    <p>Пенал жорсткий, одинарний, Синій.</p>
+                                </div>
+
+                                <div class="CKS-kil">
+                                    <div class="CKS">
+                                        <!-- ----------------------- -->
+                                        <div class="C">
+                                            <p>Ціна</p>
+                                            <div class="two-p">
+                                                <p>245 ₴</p>
+                                                <p>350 ₴</p>
+                                            </div>
+                                        </div>
+                                        <!-- ----------------------- -->
+                                        <div class="K">
+                                            <p>Кількість</p>
+                                            <p id="firstKilkist">1</p>
+                                        </div>
+                                        <!-- ----------------------- -->
+                                        <div class="S">
+                                            <p>Сума</p>
+                                            <p id="firstoutputSuma">245 ₴</p>
+                                        </div>
+                                        <!-- ----------------------- -->
+                                    </div>
+
+                                    <div class="kil">
+                                        <button onclick="decrement()" class="minus-btn">-</button>
+                                        <input id="totalClicks" class="kilkist" type="number" value="1" min="1" max="10">
+                                        <button onclick="increment()" class="plus-btn">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ----------------------- -->
+                            <div class="card">
+                                <div class="img-p">
+                                    <img src="./img/card3.png" alt="">
+                                    <p>Дерев’яна підставка для ручок.</p>
+                                </div>
+
+                                <div class="CKS-kil">
+                                    <div class="CKS">
+                                        <!-- ----------------------- -->
+                                        <div class="C">
+                                            <p>Ціна</p>
+                                            <div class="two-p">
+                                                <p>45 ₴</p>
+                                                <p>64 ₴</p>
+                                            </div>
+                                        </div>
+                                        <!-- ----------------------- -->
+                                        <div class="K">
+                                            <p>Кількість</p>
+                                            <p id="secondKilkist">10</p>
+                                        </div>
+                                        <!-- ----------------------- -->
+                                        <div class="S">
+                                            <p>Сума</p>
+                                            <p id="firstoutputSuma">450 ₴</p>
+                                        </div>
+                                        <!-- ----------------------- -->
+                                    </div>
+
+                                    <div class="kil">
+                                        <button onclick="decrementSecond()" class="minus-btn">-</button>
+                                        <input id="totalClicks2" class="kilkist" type="number" value="10" min="1" max="10">
+                                        <button onclick="incrementSecond()" class="plus-btn">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ----------------------- -->
+                            <div class="card">
+                                <div class="img-p">
+                                    <img src="./img/top-card-4.png" alt="">
+                                    <p>Щоденник шкільний Kite Don't quit.</p>
+                                </div>
+
+                                <div class="CKS-kil">
+                                    <div class="CKS">
+                                        <!-- ----------------------- -->
+                                        <div class="C">
+                                            <p>Ціна</p>
+                                            <div class="two-p">
+                                                <p>212 ₴</p>
+                                                <!-- <p>64 ₴</p> -->
+                                            </div>
+                                        </div>
+                                        <!-- ----------------------- -->
+                                        <div class="K">
+                                            <p>Кількість</p>
+                                            <p id="thirdKilkist">2</p>
+                                        </div>
+                                        <!-- ----------------------- -->
+                                        <div class="S">
+                                            <p>Сума</p>
+                                            <p id="firstoutputSuma">424 ₴</p>
+                                        </div>
+                                        <!-- ----------------------- -->
+                                    </div>
+
+                                    <div class="kil">
+                                        <button onclick="decrementThird()" class="minus-btn">-</button>
+                                        <input id="totalClicks3" class="kilkist" type="number" value="2" min="1" max="10">
+                                        <button onclick="incrementThird()" class="plus-btn">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ----------------------- -->
+                            <div class="card">
+                                <div class="img-p">
+                                    <img src="./img/new-card-2.png" alt="">
+                                    <p>Олівці кольорові Kite Fantasy.</p>
+                                </div>
+
+                                <div class="CKS-kil">
+                                    <div class="CKS">
+                                        <!-- ----------------------- -->
+                                        <div class="C">
+                                            <p>Ціна</p>
+                                            <div class="two-p">
+                                                <p>141 ₴</p>
+                                                <!-- <p>64 ₴</p> -->
+                                            </div>
+                                        </div>
+                                        <!-- ----------------------- -->
+                                        <div class="K">
+                                            <p>Кількість</p>
+                                            <p id="fourthKilkist">4</p>
+                                        </div>
+                                        <!-- ----------------------- -->
+                                        <div class="S">
+                                            <p>Сума</p>
+                                            <p id="firstoutputSuma">564 ₴</p>
+                                        </div>
+                                        <!-- ----------------------- -->
+                                    </div>
+
+                                    <div class="kil">
+                                        <button onclick="decrementFourth()" class="minus-btn">-</button>
+                                        <input id="totalClicks4" class="kilkist" type="number" value="4" min="1" max="10">
+                                        <button onclick="incrementFourth()" class="plus-btn">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ----------------------- -->
+                            <div class="card">
+                                <div class="img-p">
+                                    <img src="./img/card4.png" alt="">
+                                    <p>Папка для праці картонна.</p>
+                                </div>
+
+                                <div class="CKS-kil">
+                                    <div class="CKS">
+                                        <!-- ----------------------- -->
+                                        <div class="C">
+                                            <p>Ціна</p>
+                                            <div class="two-p">
+                                                <p>115 ₴</p>
+                                                <p>163 ₴</p>
+                                            </div>
+                                        </div>
+                                        <!-- ----------------------- -->
+                                        <div class="K">
+                                            <p>Кількість</p>
+                                            <p id="fiveKilkist">3</p>
+                                        </div>
+                                        <!-- ----------------------- -->
+                                        <div class="S">
+                                            <p>Сума</p>
+                                            <p id="firstoutputSuma">345 ₴</p>
+                                        </div>
+                                        <!-- ----------------------- -->
+                                    </div>
+
+                                    <div class="kil">
+                                        <button onclick="decrementFive()" class="minus-btn">-</button>
+                                        <input id="totalClicks5" class="kilkist" type="number" value="3" min="1" max="10">
+                                        <button onclick="incrementFive()" class="plus-btn">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ----------------------- -->
+                        </div>
+
+                    </div>
+
+
+                    <div class="second-second-container">
+                        <div class="span-p">
+                            <span><p>2</p></span>
+                            <p>Доставка</p>
+                        </div>
+
+                        <div class="second-containerSECOND">
+
+                            <div class="container-Newpost">
+
+                                <div class="radio-new">
+                                    <div class="radio-lb">
+                                        <input type="radio" id="newpost" name="post">
+                                        <label for="newpost">Самовивіз з Нової Пошти</label>
+                                    </div>
+
+                                    <p>150 ₴</p>
+                                </div>
+
+
+                                <div class="Newpost-content">
+                                    <details class="new-details">
+                                        <summary class="sum-new">
+                                            <div class="newpost-imgP">
+                                                <p>Виберіть відповідне відділення</p>
+                                                <img class="new-chevron" src="./img/arrow-down.svg" alt="">
+                                            </div>
+                                        </summary>
+
+                                        <div class="empty">Покищо пусто</div>
+                                    </details>
+                                </div>
+
+                            </div>
+
+                            <div class="container-Ukrpost">
+
+                                <div class="radio-ukr">
+                                    <div class="radio-lb">
+                                        <input type="radio" id="ukrpost" name="post">
+                                        <label for="ukrpost">Самовивіз з Укрпошта</label>
+                                    </div>
+
+                                    <p>95 ₴</p>
+                                </div>
+
+                                <div class="Ukrpost-content"></div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+
+
+                </div>
+
+            </main>
+
+
+            <aside class="container-check">
+
+            </aside>
+        </div>
+    </div>
+</main>
+<!-- CONTENT END -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Footer -->
+<footer class="footer">
+	<div class="container-foot">
+		<div class="upper-footer">
+				
+			<div class="footer-text-1">
+				<img class="f-logo" src="img/LOGO.svg" alt="">
+				<p class="apeal">Звертайтеся за номером</p>
+				<p class="p-number">+380964567657</p>
+			</div>
+
+			<div class="footer-text-2">
+				<p class="main-f-text">Умови</p>
+				<ul class="f-ps">
+					<li><a href=""><p>Сервісні умови</p></a></li>
+					<li><a href=""><p>Комерційні умови</p></a></li>
+					<li><a href=""><p>Гарантійні зобов'язання</p></a></li>
+				</ul>
+			</div>
+
+			<div class="footer-text-3">
+				<p class="main-f-text">Компанія</p>
+				<ul class="f-ps">
+					<li><a href=""><p>Місія</p></a></li>
+					<li><a href=""><p>Принципи</p></a></li>
+				</ul>
+			</div>
+
+			<div class="footer-text-4">
+				<p class="main-f-text">Клієнти</p>
+				<ul class="f-ps">
+					<li><a href=""><p>Мережевий рітейл</p></a></li>
+					<li><a href=""><p>Острівці і магазини</p></a></li>
+					<li><a href=""><p>Інтернет-магазини</p></a></li>
+					<li><a href=""><p>Instagram-магазини</p></a></li>
+					<li><a href=""><p>Постачальникам</p></a></li>
+				</ul>
+			</div>
+
+			<div class="footer-text-5">
+				<p class="main-f-text">Швидкі посилання</p>
+				<ul class="f-ps">
+					<li><a href="#"><p>Контакти</p></a></li>
+					<li><a href="./account/account.html"><p>Особистий кабінет</p></a></li>
+				</ul>
+			</div>
+
+		</div>
+
+
+		<div class="under-footer">
+			<p class="Ncase">© 2023-2025 Ncase. Всі права захищені.</p>
+
+			<div class="p-icons">
+				<p class="Follow">Слідкуй за нами тут</p>
+				<div class="messages-imgs">
+					<a href=""><img src="img/telegram.svg" alt=""></a>
+					<a href=""><img src="img/youtube.svg" alt=""></a>
+					<a href=""><img src="img/instagram.svg" alt=""></a>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</footer>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
