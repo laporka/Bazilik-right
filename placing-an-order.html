@@ -21,8 +21,8 @@
                 </div>
                 <div class="icons .w3-animate-zoom">
                     <button><img src="img/heart.svg" alt=""></button>
-                    <button onclick="popupIn()"><img src="img/user.svg" alt=""></button>
-                    <button onclick="popupCart()"><img src="img/shopping-cart.svg" alt=""></button>
+                    <button><a href="./account/account.html"><img src="img/user.svg" alt=""></a></button>
+                    <button><img src="img/shopping-cart.svg" alt=""></button>
                 </div>
             </div>
 
@@ -120,27 +120,27 @@
                                         <div class="C">
                                             <p>Ціна</p>
                                             <div class="two-p">
-                                                <p>245 ₴</p>
+                                                <p id="price1">245 ₴</p>
                                                 <p>350 ₴</p>
                                             </div>
                                         </div>
                                         <!-- ----------------------- -->
                                         <div class="K">
                                             <p>Кількість</p>
-                                            <p id="firstKilkist">1</p>
+                                            <p id="Kilkist1">1</p>
                                         </div>
                                         <!-- ----------------------- -->
                                         <div class="S">
                                             <p>Сума</p>
-                                            <p id="firstoutputSuma">245 ₴</p>
+                                            <p id="total-price1">245 ₴</p>
                                         </div>
                                         <!-- ----------------------- -->
                                     </div>
 
                                     <div class="kil">
-                                        <button onclick="decrement()" class="minus-btn">-</button>
-                                        <input id="totalClicks" class="kilkist" type="number" value="1" min="1" max="10">
-                                        <button onclick="increment()" class="plus-btn">+</button>
+                                        <button onclick="decreaseQuantity(1)" class="minus-btn">-</button>
+                                        <input id="quantity1" class="kilkist" type="number" value="1" min="1" max="10">
+                                        <button onclick="increaseQuantity(1)" class="plus-btn">+</button>
                                     </div>
                                 </div>
                             </div>
@@ -157,27 +157,27 @@
                                         <div class="C">
                                             <p>Ціна</p>
                                             <div class="two-p">
-                                                <p>45 ₴</p>
+                                                <p id="price2">45 ₴</p>
                                                 <p>64 ₴</p>
                                             </div>
                                         </div>
                                         <!-- ----------------------- -->
                                         <div class="K">
                                             <p>Кількість</p>
-                                            <p id="secondKilkist">10</p>
+                                            <p id="Kilkist2">10</p>
                                         </div>
                                         <!-- ----------------------- -->
                                         <div class="S">
                                             <p>Сума</p>
-                                            <p id="firstoutputSuma">450 ₴</p>
+                                            <p id="total-price2">450 ₴</p>
                                         </div>
                                         <!-- ----------------------- -->
                                     </div>
 
                                     <div class="kil">
-                                        <button onclick="decrementSecond()" class="minus-btn">-</button>
-                                        <input id="totalClicks2" class="kilkist" type="number" value="10" min="1" max="10">
-                                        <button onclick="incrementSecond()" class="plus-btn">+</button>
+                                        <button onclick="decreaseQuantity(2)" class="minus-btn">-</button>
+                                        <input id="quantity2" class="kilkist" type="number" value="10" min="1" max="10">
+                                        <button onclick="increaseQuantity(2)" class="plus-btn">+</button>
                                     </div>
                                 </div>
                             </div>
@@ -194,27 +194,27 @@
                                         <div class="C">
                                             <p>Ціна</p>
                                             <div class="two-p">
-                                                <p>212 ₴</p>
+                                                <p id="price3">212 ₴</p>
                                                 <!-- <p>64 ₴</p> -->
                                             </div>
                                         </div>
                                         <!-- ----------------------- -->
                                         <div class="K">
                                             <p>Кількість</p>
-                                            <p id="thirdKilkist">2</p>
+                                            <p id="Kilkist3">2</p>
                                         </div>
                                         <!-- ----------------------- -->
                                         <div class="S">
                                             <p>Сума</p>
-                                            <p id="firstoutputSuma">424 ₴</p>
+                                            <p id="total-price3">424 ₴</p>
                                         </div>
                                         <!-- ----------------------- -->
                                     </div>
 
                                     <div class="kil">
-                                        <button onclick="decrementThird()" class="minus-btn">-</button>
-                                        <input id="totalClicks3" class="kilkist" type="number" value="2" min="1" max="10">
-                                        <button onclick="incrementThird()" class="plus-btn">+</button>
+                                        <button onclick="decreaseQuantity(3)" class="minus-btn">-</button>
+                                        <input id="quantity3" class="kilkist" type="number" value="2" min="1" max="10">
+                                        <button onclick="increaseQuantity(3)" class="plus-btn">+</button>
                                     </div>
                                 </div>
                             </div>
@@ -231,27 +231,27 @@
                                         <div class="C">
                                             <p>Ціна</p>
                                             <div class="two-p">
-                                                <p>141 ₴</p>
+                                                <p id="price4">141 ₴</p>
                                                 <!-- <p>64 ₴</p> -->
                                             </div>
                                         </div>
                                         <!-- ----------------------- -->
                                         <div class="K">
                                             <p>Кількість</p>
-                                            <p id="fourthKilkist">4</p>
+                                            <p id="Kilkist4">4</p>
                                         </div>
                                         <!-- ----------------------- -->
                                         <div class="S">
                                             <p>Сума</p>
-                                            <p id="firstoutputSuma">564 ₴</p>
+                                            <p id="total-price4">564 ₴</p>
                                         </div>
                                         <!-- ----------------------- -->
                                     </div>
 
                                     <div class="kil">
-                                        <button onclick="decrementFourth()" class="minus-btn">-</button>
-                                        <input id="totalClicks4" class="kilkist" type="number" value="4" min="1" max="10">
-                                        <button onclick="incrementFourth()" class="plus-btn">+</button>
+                                        <button onclick="decreaseQuantity(4)" class="minus-btn">-</button>
+                                        <input id="quantity4" class="kilkist" type="number" value="4" min="1" max="10">
+                                        <button onclick="increaseQuantity(4)" class="plus-btn">+</button>
                                     </div>
                                 </div>
                             </div>
@@ -268,27 +268,27 @@
                                         <div class="C">
                                             <p>Ціна</p>
                                             <div class="two-p">
-                                                <p>115 ₴</p>
+                                                <p id="price5">115 ₴</p>
                                                 <p>163 ₴</p>
                                             </div>
                                         </div>
                                         <!-- ----------------------- -->
                                         <div class="K">
                                             <p>Кількість</p>
-                                            <p id="fiveKilkist">3</p>
+                                            <p id="Kilkist5">3</p>
                                         </div>
                                         <!-- ----------------------- -->
                                         <div class="S">
                                             <p>Сума</p>
-                                            <p id="firstoutputSuma">345 ₴</p>
+                                            <p id="total-price5">345 ₴</p>
                                         </div>
                                         <!-- ----------------------- -->
                                     </div>
 
                                     <div class="kil">
-                                        <button onclick="decrementFive()" class="minus-btn">-</button>
-                                        <input id="totalClicks5" class="kilkist" type="number" value="3" min="1" max="10">
-                                        <button onclick="incrementFive()" class="plus-btn">+</button>
+                                        <button onclick="decreaseQuantity(5)" class="minus-btn">-</button>
+                                        <input id="quantity5" class="kilkist" type="number" value="3" min="1" max="10">
+                                        <button onclick="increaseQuantity(5)" class="plus-btn">+</button>
                                     </div>
                                 </div>
                             </div>
@@ -344,15 +344,157 @@
                                     <p>95 ₴</p>
                                 </div>
 
-                                <div class="Ukrpost-content"></div>
+                                <div class="Ukrpost-content">
+                                    <details class="ukr-details">
+                                        <summary class="sum-ukr">
+                                            <div class="ukrpost-imgP">
+                                                <p>Виберіть відповідне відділення</p>
+                                                <img class="ukr-chevron" src="./img/arrow-down.svg" alt="">
+                                            </div>
+                                        </summary>
+
+                                        <div class="empty">Покищо пусто</div>
+                                    </details>
+                                </div>
+
                             </div>
 
                         </div>
                     </div>
 
 
+                    <div class="third-second-container">
+                        <div class="span-p">
+                            <span><p>3</p></span>
+                            <p>Оплата</p>
+                        </div>
+
+                        <div class="third-containerSECOND">
+
+                            <div class="pid-chas">
+                                <input class="istyle pid-checked" type="radio" id="pid-chas" name="metod-oplata" checked>
+                                <label for="pid-chas">Оплата під час отримання товару</label>
+                            </div>
+
+                            <div class="oplata-zaraz">
+
+                                <div class="ioplata-zaraz">
+                                    <input class="istyle zaraz-checked" type="radio" name="metod-oplata" id="zarazoplata">
+                                    <label for="zarazoplata">Оплатити зараз</label>
+                                </div>
+
+                                <div class="container-oplata">
+
+                                    <div class="addCard">
+                                        <input class="istyle addCard-cheked" type="radio" id="addcard">
+                                        <label for="addcard">Додати картку</label>
+                                    </div>
+
+                                    <div class="oplata-content">
+                                        <div class="Cardadding">
+                                                
+                                            <div class="Card-numbers">
+                                                <label for="card-number">Номер карти</label>
+                                                <input id="card-number" type="text" maxlength="22" placeholder="XXXX  XXXX  XXXX  XXXX">
+                                            </div>
+
+                                            <div class="time-CVV">
+
+                                                <div class="time">
+                                                    <label for="termin">Термін дії</label>
+                                                    <div class="slesh-inputs">
+                                                        <input id="termin" type="text" placeholder="XХ" maxlength="2">
+                                                        <p>/</p>
+                                                        <input id="termin" type="text" placeholder="XX" maxlength="2">
+                                                    </div>
+                                                </div>
+
+                                                <div class="CVV-IMG">
+                                                    <div class="CVV">
+                                                        <label for="cvv">CVV</label>
+                                                        <input id="cvv" type="text" maxlength="3" placeholder="XXX">
+                                                    </div>
+
+                                                    <img src="./img/cardCVV.svg" alt="">
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="accept-add">
+                                        <p class="nadavanya">Натискаючи кнопку «Додати», Ви підтверджуєте, що надаєте свою згоду (акцепт) на надання Вам фінансових послуг з переказу коштів з метою оплати замовлення\послуг на Bazilik</p>
+                                    </div>
+                                        
+                                </div>
+
+                            </div>
+
+                            <div class="credit">
+                                <input class="istyle cred-checked" type="radio" id="credit" name="metod-oplata" checked>
+                                <label for="credit">Кредит та оплата частинами</label>
+                            </div>
+
+                        </div>
+                    </div>
 
 
+                    <div class="four-second-container">
+                        <div class="span-p">
+                            <span><p>4</p></span>
+                            <p>Контактні дані отримувача замовлення</p>
+                        </div>
+
+                        <div class="four-containerSECOND">
+
+                            <details class="character-choose">
+                                <summary class="sum-character">
+                                    <div class="character-imgP">
+                                        <p>Маринюк Антон</p>
+                                        <img class="character-chevron" src="./img/arrow-down.svg" alt="">
+                                    </div>
+                                </summary>
+                                
+                                <div class="empty">
+                                    <p>Діма Березін</p>
+                                    <p>Артем Костьо</p>
+                                    <p>Коля Козачук</p>
+                                    <p>Дар'я Хлевна</p>
+                                    <p>Максим Волошин</p>
+                                </div>
+                            </details>
+
+                            <div class="character-input">
+                                <!-- ----------------------- -->
+                                <div class="display-input">
+                                    <div class="character-lbInput">
+                                        <label for="">Прізвище</label>
+                                        <input type="text" placeholder="Маринюк">
+                                    </div>
+                                    <!-- ----------------------- -->
+                                    <div class="character-lbInput">
+                                        <label for="">Ім’я</label>
+                                        <input type="text" placeholder="Антон">
+                                    </div>
+                                </div>
+                                <!-- ----------------------- -->
+                                <div class="display-input">
+                                    <div class="character-lbInput">
+                                        <label for="">По батькові</label>
+                                        <input type="text" placeholder="Михайлович">
+                                    </div>
+                                    <!-- ----------------------- -->
+                                    <div class="character-lbInput">
+                                        <label for="">Номер телефона</label>
+                                        <input type="tel" placeholder="+38 068 167 72 17">
+                                    </div>
+                                </div>
+                                <!-- ----------------------- -->
+                            </div>
+
+                        </div>
+                    </div>
 
                 </div>
 
@@ -360,23 +502,51 @@
 
 
             <aside class="container-check">
+                <div class="promocode-add">
+                    <p>Промокод</p>
+                    <button>Додати</button>
+                </div>
 
+                <div class="razom">
+                    <p class="paragraph">Разом</p>
+
+                    <div class="goods-cost">
+                        <div class="goods">
+                            <p>20 товарів на суму</p>
+                            <p>2028 ₴</p>
+                        </div>
+
+                        <div class="cost">
+                            <p>Вартість доставки</p>
+                            <p>За тарифами перевізника</p>
+                        </div>
+                    </div>
+
+                    <div class="dosplatu">
+                        <p>До сплати</p>
+                        <p>2028 ₴</p>
+                    </div>
+
+                    <button onclick="greatingsPopup()" class="check-confirm">Замовлення підтверджую</button>
+
+                    <div class="warning">
+                        <p>Отримання замовлення від 5 000 ₴ - 30 000 ₴ за наявності документів. При оплаті готівкою від 30 000 ₴ необхідно надати документи для верифікації згідно вимог Закону України від 06.12.2019 №361-IX </p>
+                        
+                        <div class="alert-text">
+                            <p>Підтверджуючи замовлення, я приймаю умови:</p>
+                            <ul>
+                                <li>положення про обробку і захист персональних даних</li>
+                                <li>угоди користувача</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
             </aside>
         </div>
     </div>
 </main>
 <!-- CONTENT END -->
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -453,6 +623,30 @@
 
 
 
-    <script src="script.js"></script>
+<section class="greatings-popup" id="greatings">
+    <div class="container-greatings">
+
+        <div class="content-greatings">
+
+            <img src="./img/confirm.svg" alt="">
+
+            <div class="greatings-space">
+                <div class="p-greatings">
+                    <p>Дякуємо, ваше замовлення оформлено</p>
+                    <p>Код відстежування замовлення VBKJ3G</p>
+                </div>
+
+                <a href="./index.html"><button>На головну</button></a>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+
+<script src="script.js"></script>
+<script src="all.js"></script>
 </body>
 </html>
