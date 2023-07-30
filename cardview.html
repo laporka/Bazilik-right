@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="cardview.css">
+	<link rel="stylesheet" href="reset.css">
+	<title>Test-nav-slider</title>
+	<link rel="shortcut icon" href="img/Logo-icon-colored.svg" type="image/x-icon">
+</head>
+<body>
+
+<header>
+	<div class="header" id="Home">
+        <div class="container-1">
+
+            <div class="lsi">
+                <a href="./index.html"><img class="logo-light w3-animate-zoom-logo" src="img/Logo white.svg" alt=""></a>
+                <div class="search">
+                    <input type="text" placeholder="Шукати..." class="input_search">
+                </div>
+                <div class="icons .w3-animate-zoom">
+                    <button><a href="./account/wish-list.html"><img src="img/heart.svg" alt=""></a></button>
+                    <button><a href="./account/account.html"><img src="img/user.svg" alt=""></a></button>
+                    <button><img src="img/shopping-cart.svg" alt=""></button>
+                </div>
+            </div>
+
+            <div class="menu">
+                <ul class="menu_ul">
+                    <li class="menu_text"><a href="./index.html#Home">Home</a></li>
+                    <li class="menu_text"><a href="./index.html#Sale">Sale</a></li>
+                    <li class="menu_text"><a href="./index.html#Top-seller">Top Saller</a></li>
+                    <li class="menu_text"><a href="./index.html#New">New</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</header>
+
+<!-- CONTENT -->
+<main class="content">
+    <div class="container">
+
+        <button class="img-p" onclick="goBack()">
+            <img src="./img/arrow-left.svg" alt="">
+            <p>Назад</p>
+        </button>
+
+        <div class="container-content">
+            
+			<nav class="sticky">
+				<ul class="nav-bar">
+					<li class="autolayout active"><a href="#Use">Усе про товар</a></li>
+					<li class="autolayout"><a href="#slider">Фото</a></li>
+					<li class="autolayout"><a href="#characteristics">Характеристики</a></li>
+					<li class="autolayout"><a href="#response">Відгуки</a></li>
+					<li class="autolayout"><a href="#addquestion">Додаткове запитання</a></li>
+					<li class="autolayout"><a href="#optom">Покупка оптом</a></li>
+				</ul>
+			</nav>
+
+            <div class="good-card" id="Use">
+                <img src="./img/penal.png" alt="">
+
+				<section class="opus">
+					
+					<div class="head">Пенал без наповнення Kite для хлопчика</div>
+
+					<main class="card-content">
+
+						<div class="head-card">
+							<div class="price-img">
+								<p>156₴</p>
+								<img src="./img/heart.svg" alt="">
+							</div>
+
+							<div class="response-write">
+								<a href="#response"><p class="p112">2 відгуки</p></a>
+								<p>-</p>
+								<a href="#response"><p class="p112">Написати відгук</p></a>
+							</div>
+						</div>
+
+						<div class="colors">
+							<p>Колір:</p>
+
+							<ul class="choose-color">
+								<li class="active-color"><div class="black"></div></li>
+								<li><div class="blue"></div></li>
+								<li><div class="red"></div></li>
+								<li><div class="yellow"></div></li>
+								<li><div class="green"></div></li>
+							</ul>
+						</div>
+
+						<div class="credit">
+							<p>Кредит:</p>
+
+							<ul class="credit-methods">
+								<li><div class="credit-bg"><img src="./img/mastercard.svg" alt=""></div></li>
+								<li><div class="credit-bg"><img src="./img/visa.svg" alt=""></div></li>
+								<li><div class="credit-bg"><img src="./img/googlepay.svg" alt=""></div></li>
+								<li><div class="credit-bg"><img src="./img/applepay.svg" alt=""></div></li>
+								<li><div class="credit-bg"><img src="./img/monobank.svg" alt=""></div></li>
+							</ul>
+						</div>
+
+						<div class="buy-plus">
+							<button class="btn-buy">Купити</button>
+
+							<div class="plus-minus">
+								<button class="btn-minus" onclick="decreaseQuantity(1)">-</button>
+								<input class="input-plusminus" type="number" id="quantity1" value="1" maxlength="10">
+								<button class="btn-plus" onclick="increaseQuantity(1)">+</button>
+							</div>
+						</div>
+
+					</main>
+
+				</section>
+            </div>
+
+
+			<div class="Slider" id="slider">
+
+				<div class="mySlides w3-animate-left">
+					<div class="slide-1">
+						<img src="./img/slide1.png" alt="">
+
+						<div class="opus-text">
+							<p>Опис</p>
+
+							<div class="text-slider">
+								<p>Пенал Kite HW22-623 – стильний, компактний та неймовірно місткий пенал-книжка з 2 відділеннями та органайзером на 32 предмети. Допоможе дитині завжди бути зібраною та організованою. Ідеальна модель для першокласників та учнів початкової школи, віком від 6 років.</p>
+								<p>Усе необхідне – в одному пеналі! На уроці задали розфарбувати малюнок чи накреслити рівну лінію? А може, ручка закінчилася та потрібна запасна? З цією моделлю дитині завжди буде легко зорієнтуватися на уроці, швидко знайти потрібний предмет і легко впоратися із будь-яким завданням.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="mySlides w3-animate-left">
+					<div class="slide-2">
+						
+						<div class="text-slider">
+							<p>У пеналі легко підтримувати порядок. Ручки, олівці, лінійка, гумка і точилка: кожен предмет буде на своєму місці, акуратно закріплений еластичною тасьмою.</p>
+							<p>Привабливий дизайн у наймилішій ліцензії Hot Wheels ідеально поєднується з рюкзаком Kite HW22-555S та сумкою для взуття HW22-601M-2. Капсульна колекція в єдиному дизайні цілий рік підніматиме настрій і мотивуватиме вчитися із задоволенням.</p>
+							<p>Еталонна німецька якість – гарантія довгої служби. Кожна деталь пеналу виконана бездоганно. Тканина не тьмяніє, надовго зберігаючи початкову яскравість. Внутрішнє покриття ПВХ легко чистити. Пенали Kite готові до насиченого шкільного графіка, чудово справляються із частими відкриттями-закриттями на кожному уроці.</p>
+						</div>
+
+						<img src="./img/slide2.png" alt="">
+
+					</div>
+				</div>
+
+				<div class="mySlides w3-animate-left">
+					<div class="slide-3">
+						
+						<img src="./img/slide3.png" alt="">
+
+						<div class="features">
+							<p>Особливості</p>
+
+							<ul class="features-list">
+								<li class="features-text">2 місткі відділення – щоб все необхідне завжди було під рукою;</li>
+								<li class="features-text">Гумки для фіксації канцелярського приладдя на 32 предмети – для порядку всередині пеналу;</li>
+								<li class="features-text">Тканинне окантування забезпечує захист кромки;</li>
+								<li class="features-text">Розмір: 19,5x12,5x4 см – компактний та дуже місткий;</li>
+								<li class="features-text">Міцні матеріали та надійна фурнітура – гарантія довгої служби;</li>
+								<li class="features-text">Матеріал зовні – міцний зносостійкий поліестер;</li>
+								<li class="features-text">Внутрішнє ПВХ-оздоблення – легко чиститься;</li>
+								<li class="features-text">Можна зібрати круту капсулу з рюкзаком та сумкою для взуття.</li>
+							</ul>
+						</div>
+
+					</div>
+				</div>
+
+
+				<!-- RADIOS -->
+				<div class="radios">
+					<button onclick="plusDivs(-1)"><img src="./img/arrow-left.svg" alt=""></button>
+					<span class="span-radio" onclick="currentDiv(1)"> <span class="slide-number"></span> </span>
+					<span class="span-radio" onclick="currentDiv(2)"> <span class="slide-number"></span> </span>
+					<span class="span-radio" onclick="currentDiv(3)"> <span class="slide-number"></span> </span>
+					<button onclick="plusDivs(1)"><img src="./img/arrow-right.svg" alt=""></button>
+				</div>
+				<!-- RADIOS -->
+
+			</div>
+
+
+			<div class="characteristics-response">
+				
+				<div class="characteristics" id="characteristics">
+					<p>Характеристики</p>
+
+					<div class="characteristics-content">
+
+						<ul class="ul-text">
+							<li>Серія</li>
+							<li>Кількість відділень</li>
+							<li>Матеріал корпусу</li>
+							<li>Розміри</li>
+							<li>Стать</li>
+							<li>Основний колір</li>
+							<li>Форма</li>
+							<li>Вага</li>
+							<li>Країна реєстрації бренду</li>
+							<li>Гарантія</li>
+						</ul>
+						
+						<ul class="ul-character">
+							<li><a href="#1">Hot Wheels</a></li>
+							<li><a href="#1">2</a></li>
+							<li><a href="#1">Поліестер</a></li>
+							<li>19.5x12.5x4 см</li>
+							<li><a href="#1">Для хлопчиків</a></li>
+							<li><a href="#1">Синій</a></li>
+							<li><a href="#1">Книжка</a></li>
+							<li>220г</li>
+							<li>Німеччина</li>
+							<li>14 днів</li>
+						</ul>
+
+					</div>
+				</div>
+
+				<div class="response" id="response">
+					<p>Відгуки покупців</p>
+
+					<div class="responses">
+						<div class="response1 size">
+							
+							<div class="head-response">
+
+								<div class="title">
+									<img src="./img/bag-tick.svg" alt="">
+
+									<div class="text-title">
+										<p>Вадим Шевчук</p>
+										<p>покупець</p>
+									</div>
+								</div>
+
+								<div class="date-like">
+									<p>19 вересня 2021</p>
+
+									<div class="like-dislike">
+										
+										<div class="like">
+											<img src="./img/like.svg" alt="">
+											<p>0</p>
+										</div>
+
+										<div class="dislike">
+											<img src="./img/dislike.svg" alt="">
+											<p>0</p>
+										</div>
+
+									</div>
+								</div>
+
+							</div>
+							<!---------------------  -->
+							<main class="main-response">
+
+								<div class="response-text">
+									<p>Пенал хороший, зручний. Поміщається все що потрібно. Дитина задоволена.</p>
+								</div>
+
+								<div class="advantages-disadvantages">
+
+									<div class="advantages">
+										<p>Переваги:</p>
+										<p>Якість, дизайн</p>
+									</div>
+
+									<div class="disadvantages">
+										<p>Недоліки:</p>
+										<p>Ціна</p>
+									</div>
+
+								</div>
+
+							</main>
+
+						</div>
+
+						<div class="response2 size">
+							
+							<div class="head-response">
+
+								<div class="title">
+									<img src="./img/bag-tick.svg" alt="">
+
+									<div class="text-title">
+										<p>Ілля Мезурін</p>
+										<p>покупець</p>
+									</div>
+								</div>
+
+								<div class="date-like">
+									<p>1 лютого 2021</p>
+
+									<div class="like-dislike">
+										
+										<div class="like">
+											<img src="./img/like.svg" alt="">
+											<p>2</p>
+										</div>
+
+										<div class="dislike">
+											<img src="./img/dislike.svg" alt="">
+											<p>4</p>
+										</div>
+
+									</div>
+								</div>
+
+							</div>
+							<!---------------------  -->
+							<main class="main-response">
+
+								<div class="response-text">
+									<p>Не коштує своїх грошей, порвався майже зразу, при тому що не тільки в мого сина, а й в однокласника. Заклеїв в одному місці, розлізся в іншому. Дуже розчарувався, тому що надіявся на гарну якість і що хоч один навчальний рік витримає.</p>
+								</div>
+
+								<div class="advantages-disadvantages">
+
+									<div class="advantages">
+										<p>Переваги:</p>
+										<p>Компактний, легкий, вмісткий.</p>
+									</div>
+
+									<div class="disadvantages">
+										<p>Недоліки:</p>
+										<p>Швидко порвався</p>
+									</div>
+
+								</div>
+								
+							</main>
+
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+
+        </div>
+
+        
+    </div>
+</main>
+<!-- CONTENT END -->
+
+
+
+
+
+
+
+
+
+
+
+<!-- Footer -->
+<footer class="footer">
+	<div class="container-foot">
+		<div class="upper-footer">
+				
+			<div class="footer-text-1">
+				<img class="f-logo" src="img/LOGO.svg" alt="">
+				<p class="apeal">Звертайтеся за номером</p>
+				<p class="p-number">+380964567657</p>
+			</div>
+
+			<div class="footer-text-2">
+				<p class="main-f-text">Умови</p>
+				<ul class="f-ps">
+					<li><a href=""><p>Сервісні умови</p></a></li>
+					<li><a href=""><p>Комерційні умови</p></a></li>
+					<li><a href=""><p>Гарантійні зобов'язання</p></a></li>
+				</ul>
+			</div>
+
+			<div class="footer-text-3">
+				<p class="main-f-text">Компанія</p>
+				<ul class="f-ps">
+					<li><a href=""><p>Місія</p></a></li>
+					<li><a href=""><p>Принципи</p></a></li>
+				</ul>
+			</div>
+
+			<div class="footer-text-4">
+				<p class="main-f-text">Клієнти</p>
+				<ul class="f-ps">
+					<li><a href=""><p>Мережевий рітейл</p></a></li>
+					<li><a href=""><p>Острівці і магазини</p></a></li>
+					<li><a href=""><p>Інтернет-магазини</p></a></li>
+					<li><a href=""><p>Instagram-магазини</p></a></li>
+					<li><a href=""><p>Постачальникам</p></a></li>
+				</ul>
+			</div>
+
+			<div class="footer-text-5">
+				<p class="main-f-text">Швидкі посилання</p>
+				<ul class="f-ps">
+					<li><a href="#"><p>Контакти</p></a></li>
+					<li><a href="./account/account.html"><p>Особистий кабінет</p></a></li>
+				</ul>
+			</div>
+
+		</div>
+
+
+		<div class="under-footer">
+			<p class="Ncase">© 2023-2025 Ncase. Всі права захищені.</p>
+
+			<div class="p-icons">
+				<p class="Follow">Слідкуй за нами тут</p>
+				<div class="messages-imgs">
+					<a href=""><img src="img/telegram.svg" alt=""></a>
+					<a href=""><img src="img/youtube.svg" alt=""></a>
+					<a href=""><img src="img/instagram.svg" alt=""></a>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</footer>
+
+
+<script src="all.js"></script>
+<script src="nav.js"></script>
+</body>
+</html>

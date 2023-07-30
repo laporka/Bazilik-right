@@ -646,20 +646,6 @@ body{
 	background-color: #74BDD3;
 }
 
-
-
-/* ЧОГОСЬ НЕ ПРАЦЮЄ */
-.radio-lb input[type="radio"]:checked .container-Newpost{
-	border: 1px solid #CBC9C4;
-	padding: 16px;
-}
-.radio-lb input[type="radio"]:checked .Newpost-content{
-	display: block;
-}
-/* ЧОГОСЬ НЕ ПРАЦЮЄ */
-
-
-
 .radio-lb label{
 	font-family: 'Inter';
 	font-size: 16px;
@@ -724,7 +710,7 @@ body{
 	padding-left: 36px;
 	height: auto;
 	margin-top: 16px;
-	/* display: none; */
+	display: none;
 }
 .ukr-details{
 	display: flex;
@@ -790,7 +776,6 @@ body{
 	display: flex;
 	column-gap: 12px;
 	align-items: center;
-	margin-bottom: 16px;
 }
 .ioplata-zaraz label{
 	font-family: 'Inter';
@@ -830,6 +815,8 @@ body{
 .container-oplata{
 	padding-left: 36px;
 	height: auto;
+	display: none;
+	margin-top: 16px;
 }
 .oplata-content{
 	padding-left: 36px;
@@ -1115,7 +1102,7 @@ body{
 	transition: all 0.15s ease-in;
 }
 .promocode-add button:hover{
-	color: rgb(158, 53, 53)
+	color: rgb(158, 53, 53);
 }
 /* ADDPROMO END */
 

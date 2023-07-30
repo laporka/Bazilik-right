@@ -307,7 +307,7 @@
                         <div class="second-containerSECOND">
 
                             <div class="container-Newpost">
-
+                                
                                 <div class="radio-new">
                                     <div class="radio-lb">
                                         <input type="radio" id="newpost" name="post">
@@ -386,7 +386,7 @@
                                 <div class="container-oplata">
 
                                     <div class="addCard">
-                                        <input class="istyle addCard-cheked" type="radio" id="addcard">
+                                        <input class="istyle addCard-cheked" type="radio" id="addcard" checked>
                                         <label for="addcard">Додати картку</label>
                                     </div>
 
@@ -395,26 +395,26 @@
                                                 
                                             <div class="Card-numbers">
                                                 <label for="card-number">Номер карти</label>
-                                                <input id="card-number" type="text" maxlength="22" placeholder="XXXX  XXXX  XXXX  XXXX">
+                                                <input id="card-number" type="text" maxlength="22" placeholder="XXXX  XXXX  XXXX  XXXX" oninput="moveToNextInput(event, 'month')">
                                             </div>
-
+                                            
                                             <div class="time-CVV">
-
+                                                
                                                 <div class="time">
-                                                    <label for="termin">Термін дії</label>
+                                                    <label for="month">Термін дії</label>
                                                     <div class="slesh-inputs">
-                                                        <input id="termin" type="text" placeholder="XХ" maxlength="2">
+                                                        <input id="month" type="text" placeholder="XХ" maxlength="2" oninput="moveToNextInput(event, 'year')">
                                                         <p>/</p>
-                                                        <input id="termin" type="text" placeholder="XX" maxlength="2">
+                                                        <input id="year" type="text" placeholder="XX" maxlength="2" oninput="moveToNextInput(event, 'cvv')">
                                                     </div>
                                                 </div>
-
+                                            
                                                 <div class="CVV-IMG">
                                                     <div class="CVV">
                                                         <label for="cvv">CVV</label>
                                                         <input id="cvv" type="text" maxlength="3" placeholder="XXX">
                                                     </div>
-
+                                            
                                                     <img src="./img/cardCVV.svg" alt="">
                                                 </div>
 
@@ -432,7 +432,7 @@
                             </div>
 
                             <div class="credit">
-                                <input class="istyle cred-checked" type="radio" id="credit" name="metod-oplata" checked>
+                                <input class="istyle cred-checked" type="radio" id="credit" name="metod-oplata">
                                 <label for="credit">Кредит та оплата частинами</label>
                             </div>
 

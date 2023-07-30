@@ -327,6 +327,7 @@ body{
 
 /* Btn-BUY for ALL*/
 .btn-buy{
+	color: #000000;
 	width: 89px;
 	height: 37px;
 	background-color: #FFFFFF;
