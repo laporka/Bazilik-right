@@ -23,9 +23,9 @@
 							<input type="text" placeholder="Шукати..." class="input_search">
 						</div>
 						<div class="icons">
-							<button><a href=""><img src="img/heart.svg" alt=""></a></button>
+							<button><a href="./wish-list.html"><img src="img/heart.svg" alt=""></a></button>
 							<button><a href="./account.html"><img src="img/user.svg" alt=""></a></button>
-							<button><a href=""><img src="img/shopping-cart.svg" alt=""></a></button>
+							<button onclick="popupCart()"><img src="img/shopping-cart.svg" alt=""></button>
 						</div>
 					</div>
 	
@@ -56,7 +56,6 @@
 						<p id="Enter">Ім'я користувача</p>
 					</div>
 				</button></a>
-<!-- DETAILS робити так бо воно відкриває просто на голове summary а на те що відкривається div -->
 
 				<a href="./order.html" class="a-data">
 				<button class="My-orders focus">
@@ -306,7 +305,7 @@
 
 					<ul class="f-ps">
 						<li><a href="#"><p>Контакти</p></a></li>
-						<li><a href="./account/account.html"><p>Особистий кабінет</p></a></li>
+						<li><a href="./account.html"><p>Особистий кабінет</p></a></li>
 					</ul>
 				</div>
 
@@ -360,6 +359,28 @@
 		</div>
 	</div>
 
+
+<!-- POPUP-CART -->
+<div id="popup-cart" class="popup-cart">
+    <div class="container-cart">
+
+        <button class="X-btn" onclick="hidepopupCart()"><img src="img/x-symbol-svgrepo-com.svg" alt=""></button>
+
+        <p class="p-kosh">Кошик</p>
+
+        <div class="content-cart">
+            <div class="p-cart">
+                <p>Ой! Здається тут пусто.</p>
+                <p>Ви ще нічого не закинули в кошик</p>
+            </div>
+
+            <a href="../placing-an-order.html"><button>ОФОРМИТИ ЗАМОВЛЕННЯ</button></a>
+        </div>
+
+    </div>
+</div>
+
+	<script src="../script.js"></script>
     <script src="account.js"></script>
 	<script src="../all.js"></script>
 </body>
