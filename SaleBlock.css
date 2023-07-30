@@ -855,6 +855,7 @@ body{
     height: 100%;
     background-color: rgba(0,0,0,0.4);
 	visibility: hidden;
+	z-index: 100;
 }	
 .container-cart{
 	position: relative;
@@ -878,6 +879,7 @@ body{
 .content-cart{
 	margin-top: 150px;
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
@@ -898,5 +900,26 @@ body{
 	display: flex;
 	flex-direction: column;
 	row-gap: 36px;
+	margin-bottom: 36px;
+}
+.content-cart button{
+	width: 353px;
+	height: 51px;
+	background-color: #F40000;
+	opacity: 72%;
+	padding-left: 16px;
+	padding-right: 16px;
+	color: white;
+	font-size: 18px;
+	font-family: 'Raleway';
+	font-weight: 400;
+	border-radius: 8px;
+}
+.X-btn{
+	width: 24px;
+	height: 24px;
+	position: absolute;
+	top: 14px;
+	right: 14px;
 }
 /* POPUP-CART */

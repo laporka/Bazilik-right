@@ -15,23 +15,23 @@
         <div class="container-1">
 
             <div class="lsi">
-                <a href=""><img class="logo-light w3-animate-zoom-logo" src="img/Logo white.svg" alt=""></a>
+                <a href="./index.html"><img class="logo-light w3-animate-zoom-logo" src="img/Logo white.svg" alt=""></a>
                 <div class="search">
                     <input type="text" placeholder="Шукати..." class="input_search">
                 </div>
                 <div class="icons .w3-animate-zoom">
-                    <button><img src="img/heart.svg" alt=""></button>
+                    <button><a href="./account/wish-list.html"><img src="img/heart.svg" alt=""></a></button>
                     <button><a href="./account/account.html"><img src="img/user.svg" alt=""></a></button>
-                    <button><img src="img/shopping-cart.svg" alt=""></button>
+                    <button onclick="popupCart()"><img src="img/shopping-cart.svg" alt=""></button>
                 </div>
             </div>
 
             <div class="menu">
                 <ul class="menu_ul">
-                    <li class="menu_text"><a href="#Home">Home</a></li>
-                    <li class="menu_text"><a href="#Sale">Sale</a></li>
-                    <li class="menu_text"><a href="#Top-seller">Top Saller</a></li>
-                    <li class="menu_text"><a href="#New">New</a></li>
+                    <li class="menu_text"><a href="./index.html#Home">Home</a></li>
+                    <li class="menu_text"><a href="./index.html#Sale">Sale</a></li>
+                    <li class="menu_text"><a href="./index.html#Top-seller">Top Saller</a></li>
+                    <li class="menu_text"><a href="./index.html#New">New</a></li>
                 </ul>
             </div>
 
@@ -399,7 +399,7 @@
                                             </div>
                                             
                                             <div class="time-CVV">
-                                                
+
                                                 <div class="time">
                                                     <label for="month">Термін дії</label>
                                                     <div class="slesh-inputs">
@@ -643,6 +643,29 @@
 
     </div>
 </section>
+
+
+
+
+<!-- POPUS -->
+<div id="popup-cart" class="popup-cart">
+    <div class="container-cart">
+
+        <button class="X-btn" onclick="hidepopupCart()"><img src="img/x-symbol-svgrepo-com.svg" alt=""></button>
+
+        <p class="p-kosh">Кошик</p>
+
+        <div class="content-cart">
+            <div class="p-cart">
+                <p>Ой! Здається тут пусто.</p>
+                <p>Ви ще нічого не закинули в кошик</p>
+            </div>
+
+            <a href="./placing-an-order.html"><button>ОФОРМИТИ ЗАМОВЛЕННЯ</button></a>
+        </div>
+
+    </div>
+</div>
 
 
 

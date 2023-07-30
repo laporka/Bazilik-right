@@ -21,7 +21,7 @@
 					<input type="text" placeholder="Шукати..." class="input_search">
 				</div>
 				<div class="icons">
-					<button><img src="img/heart.svg" alt=""></button>
+					<button><a href="./account/wish-list.html"><img src="img/heart.svg" alt=""></a></button>
 					<button onclick="popupIn()"><img src="img/user.svg" alt=""></button>
 					<button onclick="popupCart()"><img src="img/shopping-cart.svg" alt=""></button>
 				</div>
@@ -642,23 +642,29 @@
 	</div>
 </div>
 
-<!-- Popup-CART -->
+<!-- POPUP-CART -->
 <div id="popup-cart" class="popup-cart">
-	<div class="container-cart">
+    <div class="container-cart">
 
-		<button class="X-btn" onclick="hidepopupCart()"><img src="img/x-symbol-svgrepo-com.svg" alt=""></button>
+        <button class="X-btn" onclick="hidepopupCart()"><img src="img/x-symbol-svgrepo-com.svg" alt=""></button>
 
-		<p class="p-kosh">Кошик</p>
+        <p class="p-kosh">Кошик</p>
 
-		<div class="content-cart">
-			<div class="p-cart">
-				<p>Ой! Здається тут пусто.</p>
-				<p>Ви ще нічого не закинули в кошик</p>
-			</div>
-		</div>
+        <div class="content-cart">
+            <div class="p-cart">
+                <p>Ой! Здається тут пусто.</p>
+                <p>Ви ще нічого не закинули в кошик</p>
+            </div>
 
-	</div>
+            <a href="./placing-an-order.html"><button>ОФОРМИТИ ЗАМОВЛЕННЯ</button></a>
+        </div>
+
+    </div>
 </div>
+
+
+
+
 
 
 <script src="script.js"></script>
