@@ -827,6 +827,7 @@ body{
 
 /* CARD ADDING */
 .Cardadding{
+	width: 250px;
 	display: flex;
 	flex-direction: column;
 	row-gap: 12px;
@@ -862,6 +863,21 @@ body{
 	font-size: 14px;
 	font-family: 'Inter';
 	font-weight: 400;
+}
+.card-icon{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+#card-icon-container{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.card-icon img{
+	width: 32px;
+	height: 24px;
 }
 
 

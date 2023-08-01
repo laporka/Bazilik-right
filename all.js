@@ -19,6 +19,39 @@ inputElement.value = formattedValue.trim();
 
 
 
+function detectCardType() {
+  const cardNumberInput = document.getElementById('card-number');
+  const cardNumber = cardNumberInput.value.replace(/\s/g, ''); // Видаляємо пробіли з номера картки
+  const cardIconContainer = document.getElementById('card-icon-container');
+
+  let cardType = 'Unknown';
+  if (cardNumber.length >= 1) {
+    const firstTwoDigits = cardNumber.substr(0, 2);
+    if (firstTwoDigits === '40' || firstTwoDigits === '41' || firstTwoDigits === '42' || firstTwoDigits === '43' || firstTwoDigits === '44' || firstTwoDigits === '45') {
+      cardType = 'Visa';
+    } else if (firstTwoDigits === '51' || firstTwoDigits === '52' || firstTwoDigits === '53' || firstTwoDigits === '54' || firstTwoDigits === '55') {
+      cardType = 'MasterCard';
+    }
+  }
+
+  while (cardIconContainer.firstChild) {
+    cardIconContainer.removeChild(cardIconContainer.firstChild);
+  }
+
+  if (cardType === 'Visa') {
+    const visaIcon = document.createElement('img');
+    visaIcon.src = './img/visa.svg';
+    visaIcon.alt = 'Visa';
+    cardIconContainer.appendChild(visaIcon);
+  } else if (cardType === 'MasterCard') {
+    const mastercardIcon = document.createElement('img');
+    mastercardIcon.src = './img/mastercard.svg';
+    cardIconContainer.appendChild(mastercardIcon);
+  }
+}
+
+
+
 function updateQuantity(index) {
     const quantityInput = document.getElementById(`quantity${index}`);
     const quantity = parseInt(quantityInput.value);

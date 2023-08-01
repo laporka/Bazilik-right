@@ -394,8 +394,12 @@
                                         <div class="Cardadding">
                                                 
                                             <div class="Card-numbers">
-                                                <label for="card-number">Номер карти</label>
-                                                <input id="card-number" type="text" maxlength="22" placeholder="XXXX  XXXX  XXXX  XXXX" oninput="moveToNextInput(event, 'month')">
+                                                <div class="card-icon">
+                                                    <label for="card-number">Номер карти</label>
+                                                    <div id="card-icon-container"></div>
+                                                </div>
+
+                                                <input id="card-number" type="text" maxlength="22" placeholder="XXXX  XXXX  XXXX  XXXX" oninput="moveToNextInput(event, 'month'); detectCardType();">
                                             </div>
                                             
                                             <div class="time-CVV">
@@ -666,6 +670,8 @@
 
     </div>
 </div>
+
+
 
 
 
